@@ -1,0 +1,1597 @@
+[
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IjB3cFkxRWxPOFo1UmVzY0JyWExBQnc9PSIsInZhbHVlIjoiZk9SblpBSWJsODF3QkhtM0ZNK3JlekhDUkVsemo1djluT09zK1JRcFJOMWVrekdmb3F4OFdOdlhcL1crZm8wdE1yTDA2VWZaQWJrTWdFTDhxK1NOYkdQUFRoUG1MV0hpSnpcL09PXC84bjZIK3p0TTJtZ0M3ajFxaXFpOEt3QWpMVFgiLCJtYWMiOiI3OTlkNTU5Nzc4MjQwNzMwMjg4NzE1NTI2NDNiZTdjM2I5YTU3NDU0MTZhZGMyMGUwYzU4OTM2NzUzMWFhYWM3In0=",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_00.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IjB3cFkxRWxPOFo1UmVzY0JyWExBQnc9PSIsInZhbHVlIjoiZk9SblpBSWJsODF3QkhtM0ZNK3JlekhDUkVsemo1djluT09zK1JRcFJOMWVrekdmb3F4OFdOdlhcL1crZm8wdE1yTDA2VWZaQWJrTWdFTDhxK1NOYkdQUFRoUG1MV0hpSnpcL09PXC84bjZIK3p0TTJtZ0M3ajFxaXFpOEt3QWpMVFgiLCJtYWMiOiI3OTlkNTU5Nzc4MjQwNzMwMjg4NzE1NTI2NDNiZTdjM2I5YTU3NDU0MTZhZGMyMGUwYzU4OTM2NzUzMWFhYWM3In0=",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_01.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/javascript, */*; q=0.01"
+  },
+  "status": 200,
+  "file": "br_02.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=1&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_12&scrsrc=www.googletagmanager.com&rnd=1207258695.1794974598&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034~123785233&tft=1794974598399&tfd=801&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_03.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://ad.doubleclick.net/ccm/s/collect?auid=45986693.1794974598&gtm=45He6bg2v810399206za200zd810399206xeaxf1&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_04.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=123232013&t=pageview&_s=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_12&ul=ja-jp&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&sr=1280x720&vp=1280x720&_u=YADAAEABAAAAACAAI~&jid=949347355&gjid=1003334722&cid=637623144.1794974598&tid=UA-15208250-1&_gid=314211792.1794974599&_r=1&_slc=1&gtm=45He6bg2n81WT2DMXSv810399206za200zd810399206xf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034~123785233&z=2089962042",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_05.json",
+  "bytes": 3
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://stats.g.doubleclick.net/g/collect?v=2&tid=G-37DP3YV65V&cid=637623144.1794974598&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&rcb=0&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_06.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974598198&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAAAAGAC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=0&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_12&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=904",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_07.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_12&scrsrc=www.googletagmanager.com&rnd=1207258695.1794974598&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121191153~121246026~121246034~124320990&tft=1794974598599&tfd=1002&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_08.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974598586&cv=11&fst=1794974598586&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121191153~121246026~121246034~124320990&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_12&rcb=12&frm=0&tiba=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_09.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/JushouEvent",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IlNkQmc1K3FUXC8xa0dreTJTc3ptZUdBPT0iLCJ2YWx1ZSI6IjhVbVBPQlE4QmlZdWF1OUwxeklKQ05Lamo1Qlpoc1RLM1dFaXE4MzFyQXR2N3FMZnAyaVdMSTd2dDFTUkxIXC9leGZUNjFEWkV5K21udlwvb2lWTlg5bDc5ZlwvOUJnNkJCWmZJcnhCTmt5VFBnQ1RaYXVsY1ZkdjgyeUlSSVVXUzkzIiwibWFjIjoiYzhjNjkzMTFmNzhjN2IzNTU0MDQ1ZmU1OGQxZjcxYzA3ZjI1Nzk3YmUxMzI1NWVmMTM0ZGExYWFhM2EzM2RjMCJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_10.json",
+  "bytes": 956
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/RaceResult",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":12}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IlNkQmc1K3FUXC8xa0dreTJTc3ptZUdBPT0iLCJ2YWx1ZSI6IjhVbVBPQlE4QmlZdWF1OUwxeklKQ05Lamo1Qlpoc1RLM1dFaXE4MzFyQXR2N3FMZnAyaVdMSTd2dDFTUkxIXC9leGZUNjFEWkV5K21udlwvb2lWTlg5bDc5ZlwvOUJnNkJCWmZJcnhCTmt5VFBnQ1RaYXVsY1ZkdjgyeUlSSVVXUzkzIiwibWFjIjoiYzhjNjkzMTFmNzhjN2IzNTU0MDQ1ZmU1OGQxZjcxYzA3ZjI1Nzk3YmUxMzI1NWVmMTM0ZGExYWFhM2EzM2RjMCJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_11.json",
+  "bytes": 5771
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974599096\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_4e43391743778e6a5f6589927cf58dcc23e4d24a99d20b5d1d8701bec02387d8\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n2026/11/17 レース結果 | 飯塚オート | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n699\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]},{\"rid\":\"1138831582096807\",\"v\":[\"日付\\tレース\\t距離\\t天候\\n\\t\\t\\t\\n気温\\t湿度\\t走路温度\\t走路状況\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"新規登録・ログイン\\n川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"AI予想とは\"]},{\"rid\":\"1112934318405720\",\"v\":[\"出走表・オッズ・レース結果\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"event_date\":[{\"rid\":\"1165279052709212\",\"v\":[\"距離\",\"走路温度\"]},{\"rid\":\"1182986454318246\",\"v\":[\"レース\",\"湿度\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]},{\"rid\":\"1766752201102515\",\"v\":[\"出走表・オッズ・レース結果\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"entity_name\":[{\"rid\":\"1452919669600339\",\"v\":[\"出走表・オッズ・レース結果\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974598778\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nim0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\not1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nhv1\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nrh0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nah0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nnv0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\noq0\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundarymB7BJdGf9AgfnBxb--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundarymB7BJdGf9AgfnBxb",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_12.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]},{\\\"rid\\\":\\\"1138831582096807\\\",\\\"v\\\":[\\\"日付\\\\tレース\\\\t距離\\\\t天候\\\\n\\\\t\\\\t\\\\t\\\\n気温\\\\t湿度\\\\t走路温度\\\\t走路状況\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"新規登録・ログイン\\\\n川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"AI予想とは\\\"]},{\\\"rid\\\":\\\"1112934318405720\\\",\\\"v\\\":[\\\"出走表・オッズ・レース結果\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_date\\\":[{\\\"rid\\\":\\\"1165279052709212\\\",\\\"v\\\":[\\\"距離\\\",\\\"走路温度\\\"]},{\\\"rid\\\":\\\"1182986454318246\\\",\\\"v\\\":[\\\"レース\\\",\\\"湿度\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]},{\\\"rid\\\":\\\"1766752201102515\\\",\\\"v\\\":[\\\"出走表・オッズ・レース結果\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1452919669600339\\\",\\\"v\\\":[\\\"出走表・オッズ・レース結果\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_4e43391743778e6a5f6589927cf58dcc23e4d24a99d20b5d1d8701bec02387d8\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_13.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/OtherRaceInfo",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":12}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IjdlY1lMYnlUK2JnR0NzYW5DMlBZWVE9PSIsInZhbHVlIjoiK3AwMjlcL0Z1SDBwRkhkMWtDTUxcL1FsQWJ2UDJiaGp1MFJYeFRwQW9yQWkrZFpwZ21xd29cL0ltcWtpeExzaUUyZXYxWjczQU5pY3BNWCtaQThscVgxc2JkaVhrclFtaUl6VHlrQmZ3RU1iSzU1M0w3NDk5Q3M5dUNyRGZyQ3JZWnciLCJtYWMiOiJmMjc4ZjNjNjU2NDhiNjg3NzY5NDhhZDA3MmViODkyZDQxMDgwMzMxOTAzOWQ1ZGUzMDQ4NDUxYWNlYmI3NWUzIn0=",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_14.json",
+  "bytes": 754
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=1&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&scrsrc=www.googletagmanager.com&rnd=1014995244.1794974603&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119860442~120385423~120412526~120420416~120469145~120469153~121191153~121246026~121246034~124320991&tft=1794974603244&tfd=417&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_15.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974603197&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAAAAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=14&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~119860442~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123785233~124320991&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&tfd=437",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_16.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1524601855&t=pageview&_s=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&ul=ja-jp&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&sr=1280x720&vp=1280x720&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=637623144.1794974598&tid=UA-15208250-1&_gid=314211792.1794974599&_slc=1&gtm=45He6bg2n81WT2DMXSv810399206za200zd810399206xf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119860442~120385423~120412526~120420416~120469145~120469153~121191153~121246026~121246034~124320991&z=1265781522",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_17.json",
+  "bytes": 3
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&scrsrc=www.googletagmanager.com&rnd=1014995244.1794974603&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119860442~120213116~120385423~120412526~120420414~120469145~120469153~121191153~121246026~121246034~124320991&tft=1794974603328&tfd=501&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_18.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974603320&cv=11&fst=1794974603320&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119860442~120213116~120385423~120412526~120420414~120469145~120469153~121191153~121246026~121246034~124320991&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&rcb=11&frm=0&tiba=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_19.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974603397\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_c1b1e7f9309aaeb62a0d4c3cce2890eddb408cb71f5368572c524fc777b816ff\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n2026/11/17 レース結果 | 飯塚オート | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n535.1000000000058\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]},{\"rid\":\"1138831582096807\",\"v\":[\"日付\\tレース\\t距離\\t天候\\n\\t\\t\\t\\n気温\\t湿度\\t走路温度\\t走路状況\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"AI予想とは\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"event_date\":[{\"rid\":\"1165279052709212\",\"v\":[\"距離\",\"走路温度\"]},{\"rid\":\"1182986454318246\",\"v\":[\"レース\",\"湿度\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974603300\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nct3\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\not1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nhv1\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nrh0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nah0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nnv0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\noq0\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundary5tQlD1X9CzY1Spej--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundary5tQlD1X9CzY1Spej",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_20.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]},{\\\"rid\\\":\\\"1138831582096807\\\",\\\"v\\\":[\\\"日付\\\\tレース\\\\t距離\\\\t天候\\\\n\\\\t\\\\t\\\\t\\\\n気温\\\\t湿度\\\\t走路温度\\\\t走路状況\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"AI予想とは\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_date\\\":[{\\\"rid\\\":\\\"1165279052709212\\\",\\\"v\\\":[\\\"距離\\\",\\\"走路温度\\\"]},{\\\"rid\\\":\\\"1182986454318246\\\",\\\"v\\\":[\\\"レース\\\",\\\"湿度\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_c1b1e7f9309aaeb62a0d4c3cce2890eddb408cb71f5368572c524fc777b816ff\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_21.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IitiM3pXK2d6YTZkVW5WQzI1Q3BuVGc9PSIsInZhbHVlIjoiSHFHd2RqNXV3SHh2SEpwN2lTeVhnMHMzSzdmd3VGcGZNa1hJckh0aEFnUzBnVXBkcGtDQngrVldwOUlwdlhCZkdRSDJFajE1OVRXcHQrRlZsVTRmUXZDRzAreEJRXC9OcjdON0J2Q2JsdlVFUE80UEdXTUIzcW1kUDlVTVlVYkpYIiwibWFjIjoiMDEzYWNhYzRhMjk4MzEyOWQ4ZGYyYjEwMzgxZmE3YmZlZjI1ZTMwNzFlNzk3ZDBlOTRlZTI5YmFjM2NmOTUzYSJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_22.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IitiM3pXK2d6YTZkVW5WQzI1Q3BuVGc9PSIsInZhbHVlIjoiSHFHd2RqNXV3SHh2SEpwN2lTeVhnMHMzSzdmd3VGcGZNa1hJckh0aEFnUzBnVXBkcGtDQngrVldwOUlwdlhCZkdRSDJFajE1OVRXcHQrRlZsVTRmUXZDRzAreEJRXC9OcjdON0J2Q2JsdlVFUE80UEdXTUIzcW1kUDlVTVlVYkpYIiwibWFjIjoiMDEzYWNhYzRhMjk4MzEyOWQ4ZGYyYjEwMzgxZmE3YmZlZjI1ZTMwNzFlNzk3ZDBlOTRlZTI5YmFjM2NmOTUzYSJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_23.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/javascript, */*; q=0.01"
+  },
+  "status": 200,
+  "file": "br_24.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20gzb810399206zd810399206xf1&_p=1794974603197&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AEAAAGQC&ae=a&cid=637623144.1794974598&frm=0&pscdl=noapi&rcb=14&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=2&tag_exp=115938465~115938468~118897920~118897930~119860442~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123785233~124320991&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=scroll&epn.percent_scrolled=90&_et=17&tfd=1439",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_25.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974603197&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAACAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=14&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=3&tag_exp=115938465~115938468~118897920~118897930~119860442~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~123785233~124320991&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&_et=979&tfd=1439",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_26.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google.com/ccm/collect?rcb=9&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&scrsrc=www.googletagmanager.com&rnd=1014995244.1794974603&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119860442~120385423~120412526~120420416~120469145~120469153~121191153~121246026~121246034~124320991&tft=1794974604272&tfd=1445&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_27.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&scrsrc=www.googletagmanager.com&rnd=1014995244.1794974603&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119860442~120213116~120385423~120412526~120420414~120469145~120469153~121191153~121246026~121246034~124320991&tft=1794974604273&tfd=1445&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_28.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974604268&cv=11&fst=1794974604268&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~119860442~120213116~120385423~120412526~120420414~120469145~120469153~121191153~121246026~121246034~124320991&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FRaceResult%2Fiizuka%2F2026-11-17_5%3Fall%3D1&rcb=11&frm=0&tiba=2026%2F11%2F17%20%E3%83%AC%E3%83%BC%E3%82%B9%E7%B5%90%E6%9E%9C%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_29.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://autorace.jp/race_info/OtherRaceInfo",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":5}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IlRJaEdIRkg0Y053QzFcL0NrM1Y1cUlnPT0iLCJ2YWx1ZSI6IlZJaEFteXcyU3NMTHczZTByTVhHMXZxK0hQdVhkb2tVKzk5dE93eDd4Njl0TVJcL2hJRWpLT1d0ZDFwcE5CXC9lZUJWXC9nVVdTbWlCOXBiOE5lZDZ2aU82MkdVVGUzR2FTc1NWa08wQVFKTGplV3ptSTczQ3hDMFk3ZGd2aGJlSHJpIiwibWFjIjoiYTk3YjcxMzJjYzg0NTFiYmZhM2UwOWQ5NmFkZWExNGNiZjRiY2ZmNTAwMGE0YjNiYzZiMzJlYTE4ODE4NzdhZSJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_30.json",
+  "bytes": 747
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://autorace.jp/race_info/JushouEvent",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IlRJaEdIRkg0Y053QzFcL0NrM1Y1cUlnPT0iLCJ2YWx1ZSI6IlZJaEFteXcyU3NMTHczZTByTVhHMXZxK0hQdVhkb2tVKzk5dE93eDd4Njl0TVJcL2hJRWpLT1d0ZDFwcE5CXC9lZUJWXC9nVVdTbWlCOXBiOE5lZDZ2aU82MkdVVGUzR2FTc1NWa08wQVFKTGplV3ptSTczQ3hDMFk3ZGd2aGJlSHJpIiwibWFjIjoiYTk3YjcxMzJjYzg0NTFiYmZhM2UwOWQ5NmFkZWExNGNiZjRiY2ZmNTAwMGE0YjNiYzZiMzJlYTE4ODE4NzdhZSJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_31.json",
+  "bytes": 956
+ },
+ {
+  "page": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+  "url": "https://autorace.jp/race_info/RaceRefund",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IlRJaEdIRkg0Y053QzFcL0NrM1Y1cUlnPT0iLCJ2YWx1ZSI6IlZJaEFteXcyU3NMTHczZTByTVhHMXZxK0hQdVhkb2tVKzk5dE93eDd4Njl0TVJcL2hJRWpLT1d0ZDFwcE5CXC9lZUJWXC9nVVdTbWlCOXBiOE5lZDZ2aU82MkdVVGUzR2FTc1NWa08wQVFKTGplV3ptSTczQ3hDMFk3ZGd2aGJlSHJpIiwibWFjIjoiYTk3YjcxMzJjYzg0NTFiYmZhM2UwOWQ5NmFkZWExNGNiZjRiY2ZmNTAwMGE0YjNiYzZiMzJlYTE4ODE4NzdhZSJ9",
+   "referer": "https://autorace.jp/race_info/RaceResult/iizuka/2026-11-17_5?all=1",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_32.json",
+  "bytes": 14452
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&scrsrc=www.googletagmanager.com&rnd=1739171920.1794974608&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385422~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123785232~124320990&tft=1794974608161&tfd=268&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_33.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974608120&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAAAAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=1&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412526~120420414~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&tfd=287",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_34.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1260155621&t=pageview&_s=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&ul=ja-jp&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&sr=1280x720&vp=1280x720&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=637623144.1794974598&tid=UA-15208250-1&_gid=314211792.1794974599&_slc=1&gtm=45He6bg2n81WT2DMXSv810399206za200zd810399206xf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385422~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123785232~124320990&z=2133986007",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_35.json",
+  "bytes": 3
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&scrsrc=www.googletagmanager.com&rnd=1739171920.1794974608&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123785233&tft=1794974608235&tfd=341&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_36.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974608229&cv=11&fst=1794974608229&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123785233&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&rcb=7&frm=0&tiba=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_37.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/Odds/iizuka/2026-11-17_12\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974608259\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_c415ebeaa88bd5e20eb7e509d3a2adbc41ea802f05c1592c680c9db4f07286fb\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n2026/11/17 オッズ | 飯塚オート | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n310\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]},{\"rid\":\"1138831582096807\",\"v\":[\"日付\\tレース\\t距離\\t天候\\n\\t\\t\\t\\n気温\\t湿度\\t走路温度\\t走路状況\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"AI予想とは\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"event_date\":[{\"rid\":\"1165279052709212\",\"v\":[\"距離\",\"走路温度\"]},{\"rid\":\"1182986454318246\",\"v\":[\"レース\",\"湿度\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974608222\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel2\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nim0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\not1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nhv1\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nrh0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nah0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nnv0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\noq0\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundarynkZ0UE1wo1HZKhP1--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundarynkZ0UE1wo1HZKhP1",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_38.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]},{\\\"rid\\\":\\\"1138831582096807\\\",\\\"v\\\":[\\\"日付\\\\tレース\\\\t距離\\\\t天候\\\\n\\\\t\\\\t\\\\t\\\\n気温\\\\t湿度\\\\t走路温度\\\\t走路状況\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"AI予想とは\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_date\\\":[{\\\"rid\\\":\\\"1165279052709212\\\",\\\"v\\\":[\\\"距離\\\",\\\"走路温度\\\"]},{\\\"rid\\\":\\\"1182986454318246\\\",\\\"v\\\":[\\\"レース\\\",\\\"湿度\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_c415ebeaa88bd5e20eb7e509d3a2adbc41ea802f05c1592c680c9db4f07286fb\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_39.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6Im8zSXlKcVwvVWh2VGYxQWNHNEdib2NRPT0iLCJ2YWx1ZSI6InZGeFJZSkYxWGd6dE93MlpNRHJHRzRqbitOWExKWFBoXC9XZVVzbGErXC9xUFFHSWFlNWlGajUzMmpzRGJpYXhWZ3NENmY4aUNoU0hnMm92UERISzRIbnVJUkxJNVZ2R2ZUc1RTeUNyUUNOV1FPRTdqNDZyUlwvRDdZVTJRR2RnU3FtIiwibWFjIjoiNjk4NmM0NjgyYTcxZTQ2ZTBmMTY0MTU4MmZmYWVkOThlZTE3NTY0OTZjOTM1ZTJlZjAzOWM4NjE4NTI1NjZjNyJ9",
+   "referer": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_40.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6Im8zSXlKcVwvVWh2VGYxQWNHNEdib2NRPT0iLCJ2YWx1ZSI6InZGeFJZSkYxWGd6dE93MlpNRHJHRzRqbitOWExKWFBoXC9XZVVzbGErXC9xUFFHSWFlNWlGajUzMmpzRGJpYXhWZ3NENmY4aUNoU0hnMm92UERISzRIbnVJUkxJNVZ2R2ZUc1RTeUNyUUNOV1FPRTdqNDZyUlwvRDdZVTJRR2RnU3FtIiwibWFjIjoiNjk4NmM0NjgyYTcxZTQ2ZTBmMTY0MTU4MmZmYWVkOThlZTE3NTY0OTZjOTM1ZTJlZjAzOWM4NjE4NTI1NjZjNyJ9",
+   "referer": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_41.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/javascript, */*; q=0.01"
+  },
+  "status": 200,
+  "file": "br_42.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20gzb810399206zd810399206xf1&_p=1794974608120&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AEAAAGQC&ae=a&cid=637623144.1794974598&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=2&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412526~120420414~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=scroll&epn.percent_scrolled=90&_et=5&tfd=1152",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_43.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974608120&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAACAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=3&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412526~120420414~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&_et=855&tfd=1152",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_44.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&scrsrc=www.googletagmanager.com&rnd=1739171920.1794974608&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123785233&tft=1794974609058&tfd=1164&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_45.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&scrsrc=www.googletagmanager.com&rnd=1739171920.1794974608&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120385422~120412528~120420414~120469145~120469153~121191153~121246026~121246034~123785232~124320990&tft=1794974609057&tfd=1163&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_46.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974609048&cv=11&fst=1794974609048&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123785233&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&rcb=7&frm=0&tiba=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_47.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974609054\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_573961126658d9c162063e00aa60662dcabea1521962530e7934a33bbf585e07\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n2026/11/17 オッズ | 飯塚オート | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n310\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]},{\"rid\":\"1138831582096807\",\"v\":[\"日付\\tレース\\t距離\\t天候\\n\\t\\t\\t\\n気温\\t湿度\\t走路温度\\t走路状況\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"新規登録・ログイン\\n川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"AI予想とは\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"event_date\":[{\"rid\":\"1165279052709212\",\"v\":[\"距離\",\"走路温度\"]},{\"rid\":\"1182986454318246\",\"v\":[\"レース\",\"湿度\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974609051\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nim0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\not1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nah0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nnv0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\noq0\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryN6moSMBKtVmOOtCw--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryN6moSMBKtVmOOtCw",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_48.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]},{\\\"rid\\\":\\\"1138831582096807\\\",\\\"v\\\":[\\\"日付\\\\tレース\\\\t距離\\\\t天候\\\\n\\\\t\\\\t\\\\t\\\\n気温\\\\t湿度\\\\t走路温度\\\\t走路状況\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"新規登録・ログイン\\\\n川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"AI予想とは\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_date\\\":[{\\\"rid\\\":\\\"1165279052709212\\\",\\\"v\\\":[\\\"距離\\\",\\\"走路温度\\\"]},{\\\"rid\\\":\\\"1182986454318246\\\",\\\"v\\\":[\\\"レース\\\",\\\"湿度\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_573961126658d9c162063e00aa60662dcabea1521962530e7934a33bbf585e07\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_49.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://autorace.jp/race_info/OtherRaceInfo",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":12}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6InlFaittMFdRdzN5WnFKSmpvSEY3RHc9PSIsInZhbHVlIjoiTlRMcEkxR3ZaM3hvbEVXSUtQWGxFSVRzRnBaZHh2NU5GdU1PR1wvZ2gwcXZSXC9FSXB3WFlBV3U0NmNLckVGXC9OdlBuZGRlR0VSZDhHMFF3VVdSNzV0UUJyc3FvbHVEMUNoc3ZuTXRkWWFOekVKU2tnNUx5MXJlb21peTBCb0VcL3oyIiwibWFjIjoiN2VjOWQxMDAxM2VkNTkwNWZjNTIwNjU5ZjNkMWQ5ODM0YWYxNmVhY2IwZWVlZTlhZDBiYzg1ZGZlY2FmNDQwNyJ9",
+   "referer": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_50.json",
+  "bytes": 754
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://autorace.jp/race_info/Odds",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":12}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6InlFaittMFdRdzN5WnFKSmpvSEY3RHc9PSIsInZhbHVlIjoiTlRMcEkxR3ZaM3hvbEVXSUtQWGxFSVRzRnBaZHh2NU5GdU1PR1wvZ2gwcXZSXC9FSXB3WFlBV3U0NmNLckVGXC9OdlBuZGRlR0VSZDhHMFF3VVdSNzV0UUJyc3FvbHVEMUNoc3ZuTXRkWWFOekVKU2tnNUx5MXJlb21peTBCb0VcL3oyIiwibWFjIjoiN2VjOWQxMDAxM2VkNTkwNWZjNTIwNjU5ZjNkMWQ5ODM0YWYxNmVhY2IwZWVlZTlhZDBiYzg1ZGZlY2FmNDQwNyJ9",
+   "referer": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_51.json",
+  "bytes": 19951
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20gzb810399206zd810399206xf1&_p=1794974608120&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AEAAAGQC&ae=a&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=13&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=4&tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120412526~120420414~120469145~120469153~121246026~121246034&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&dr=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&sid=1794974598&sct=1&seg=1&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&_et=1008&tfd=2168",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_52.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://www.google.com/ccm/collect?rcb=7&frm=0&apvc=0&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&scrsrc=www.googletagmanager.com&rnd=1739171920.1794974608&navt=n&npa=0&ae=a&gtm=45be6bg2v9213033721za20gzb810399206zd810399206xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123785233&tft=1794974610081&tfd=2187&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_53.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Odds/iizuka/2026-11-17_12/pop",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974610064&cv=11&fst=1794974610064&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6bg2v9213033721za20gzb810399206zd810399206xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120412526~120420414~120469145~120469153~121191153~121246026~121246034~123785233&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12%2Fpop&ref=https%3A%2F%2Fautorace.jp%2Frace_info%2FOdds%2Fiizuka%2F2026-11-17_12&rcb=7&frm=0&tiba=2026%2F11%2F17%20%E3%82%AA%E3%83%83%E3%82%BA%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dpage_view&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_54.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=1&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&scrsrc=www.googletagmanager.com&rnd=1259602335.1794974613&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120412528~120420416~120469145~120469153~121191153~121246026~121246034~123785233&tft=1794974613319&tfd=573&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_55.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974613281&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAAAAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&tfd=591",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_56.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1770642647&t=pageview&_s=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&ul=ja-jp&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&sr=1280x720&vp=1280x720&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=637623144.1794974598&tid=UA-15208250-1&_gid=314211792.1794974599&_slc=1&gtm=45He6bg2n81WT2DMXSv810399206za200zd810399206xf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120412528~120420416~120469145~120469153~121191153~121246026~121246034~123785233&z=813655258",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_57.json",
+  "bytes": 3
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&scrsrc=www.googletagmanager.com&rnd=1259602335.1794974613&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&tft=1794974613370&tfd=624&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_58.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974613365&cv=11&fst=1794974613365&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&rcb=17&frm=0&tiba=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_59.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/Program/iizuka/2026-11-17_12\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974613393\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_adc4a23e8a1e1942a401fd87c4473c8fade9afaf6b4d55628f2529e43e81a1db\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n2026/11/17 出走表 | 飯塚オート | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]},{\"rid\":\"1138831582096807\",\"v\":[\"日付\\tレース\\t距離\\t天候\\n\\t\\t\\t\\n気温\\t湿度\\t走路温度\\t走路状況\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"AI予想とは\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"event_date\":[{\"rid\":\"1165279052709212\",\"v\":[\"距離\",\"走路温度\"]},{\"rid\":\"1182986454318246\",\"v\":[\"レース\",\"湿度\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974613356\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nim1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\not1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nah0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nnv0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\noq0\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryYxJNB5BypOJwTF2J--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryYxJNB5BypOJwTF2J",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_60.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]},{\\\"rid\\\":\\\"1138831582096807\\\",\\\"v\\\":[\\\"日付\\\\tレース\\\\t距離\\\\t天候\\\\n\\\\t\\\\t\\\\t\\\\n気温\\\\t湿度\\\\t走路温度\\\\t走路状況\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"AI予想とは\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_date\\\":[{\\\"rid\\\":\\\"1165279052709212\\\",\\\"v\\\":[\\\"距離\\\",\\\"走路温度\\\"]},{\\\"rid\\\":\\\"1182986454318246\\\",\\\"v\\\":[\\\"レース\\\",\\\"湿度\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_adc4a23e8a1e1942a401fd87c4473c8fade9afaf6b4d55628f2529e43e81a1db\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/Program/iizuka/2026-11-17_12\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_61.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6Ik9MYXoxNkEreklLcFhsTUU2WFRyZnc9PSIsInZhbHVlIjoiYndwUDZkVjNBR3BGaXgzd1wvYXV3ZkkzTEFwWTBtR1RheWdWblhXa3BiMThcL1ErVXhRMUVaZFBpSjluQktMblV4QW5OQVFZbGtTMVNiUEJ3bzFvNzFCa3R3dWZWVXZRSWRIM2k5d1NKR1UwQzZma3Zyb000NXplY29GUFUwY0dtYyIsIm1hYyI6ImQ3NTU0ZmMyNmRjMzhjNjVhYzgxYTk1OWMxNjk0YmRmYTIwZjJhZjk0YjkzNDk5MTUyZWRhZmRiNDU2YjQyZTEifQ==",
+   "referer": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_62.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6Ik9MYXoxNkEreklLcFhsTUU2WFRyZnc9PSIsInZhbHVlIjoiYndwUDZkVjNBR3BGaXgzd1wvYXV3ZkkzTEFwWTBtR1RheWdWblhXa3BiMThcL1ErVXhRMUVaZFBpSjluQktMblV4QW5OQVFZbGtTMVNiUEJ3bzFvNzFCa3R3dWZWVXZRSWRIM2k5d1NKR1UwQzZma3Zyb000NXplY29GUFUwY0dtYyIsIm1hYyI6ImQ3NTU0ZmMyNmRjMzhjNjVhYzgxYTk1OWMxNjk0YmRmYTIwZjJhZjk0YjkzNDk5MTUyZWRhZmRiNDU2YjQyZTEifQ==",
+   "referer": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_63.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/javascript, */*; q=0.01"
+  },
+  "status": 200,
+  "file": "br_64.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20gzb810399206zd810399206xf1&_p=1794974613281&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AEAAAGQC&ae=a&cid=637623144.1794974598&frm=0&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=2&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=scroll&epn.percent_scrolled=90&_et=3&tfd=1420",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_65.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974613281&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAACAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=3&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&_et=820&tfd=1420",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_66.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.google.com/ccm/collect?rcb=12&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&scrsrc=www.googletagmanager.com&rnd=1259602335.1794974613&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120385423~120412528~120420416~120469145~120469153~121191153~121246026~121246034~123785233&tft=1794974614176&tfd=1429&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_67.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&scrsrc=www.googletagmanager.com&rnd=1259602335.1794974613&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&tft=1794974614176&tfd=1430&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_68.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974614168&cv=11&fst=1794974614168&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&rcb=17&frm=0&tiba=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_69.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.google.com/pagead/1p-user-list/10996813064/?random=1794974614168&cv=11&fst=1794974400000&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&rcb=17&frm=0&tiba=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=9&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4gEAogo4dR-NYZdYl_7v7eKFLB-BobpgZqGLWQOF4meeBKdLH5kOaDCw4EV94Rew8Nqi-Xd-Ik3u06178yPHYLXAZ8m6-uNfaUBr15nXMLlep59G54TTO55dLyeJqj3wmdGxzOujJMsTt4TqyuzZWtixAYHj6XR3zLPk8ql2mtdt7STmUOSBse-YUqgmxxq7gqmSy9MeCoRVUtwiAoibQDrZ_eeh4yyLB1ysNRmVAjJ97EbZreEEC7sr-BlnRSJnATzwBDBV3Jlom6Zl3etrGdsvTaLEI2_xJZ7s3yHNemvtsiDp&random=877113053&rmt_tld=0&ipr=y",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_70.json",
+  "bytes": 42
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974614173\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_b09cce2f6d889acf046ad2983bac71530049b911a199b5ca98c36946a33a2d74\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n2026/11/17 出走表 | 飯塚オート | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n702.5\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]},{\"rid\":\"1138831582096807\",\"v\":[\"日付\\tレース\\t距離\\t天候\\n\\t\\t\\t\\n気温\\t湿度\\t走路温度\\t走路状況\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"新規登録・ログイン\\n川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"AI予想とは\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"event_date\":[{\"rid\":\"1165279052709212\",\"v\":[\"距離\",\"走路温度\"]},{\"rid\":\"1182986454318246\",\"v\":[\"レース\",\"湿度\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974614171\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nim1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\not1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\nhv1\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nrh0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nah0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nnv0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\noq0\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundary5i2AJS3F412LB0Bj--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundary5i2AJS3F412LB0Bj",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_71.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]},{\\\"rid\\\":\\\"1138831582096807\\\",\\\"v\\\":[\\\"日付\\\\tレース\\\\t距離\\\\t天候\\\\n\\\\t\\\\t\\\\t\\\\n気温\\\\t湿度\\\\t走路温度\\\\t走路状況\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"新規登録・ログイン\\\\n川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"AI予想とは\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_date\\\":[{\\\"rid\\\":\\\"1165279052709212\\\",\\\"v\\\":[\\\"距離\\\",\\\"走路温度\\\"]},{\\\"rid\\\":\\\"1182986454318246\\\",\\\"v\\\":[\\\"レース\\\",\\\"湿度\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_b09cce2f6d889acf046ad2983bac71530049b911a199b5ca98c36946a33a2d74\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_72.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://autorace.jp/race_info/OtherRaceInfo",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":12}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6Ik5SNWhRdnlLT2Exd3g3TmlvY0VLdlE9PSIsInZhbHVlIjoiSXBRdENBWVVrSWg2Y2VTdUVBWE9henowQkhUMU5xVHYySk5kN3ZjM2I3MytvVFYrS2VJN3V2VzZIVjQzUnZcLzZKbGJsQlB4Q1wvdWg2WGh1czlFY1BzZGcrVmh5ZGxXT1VWK1UyUnNoQTVkWWs2RUpnUnRMK0lOOGtZSHlaUmlDciIsIm1hYyI6IjMyYTUzNmQ0ODU4N2VmZmNmYjcxZjgzN2IxZTNhMDUyM2NkNGU5ODdjMzBjMjI2Yzk5NWRmM2JiODIzYWVlODYifQ==",
+   "referer": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_73.json",
+  "bytes": 754
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://autorace.jp/race_info/Program",
+  "method": "POST",
+  "post": "{\"placeCode\":5,\"raceDate\":\"2026-11-17\",\"raceNo\":12}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6Ik5SNWhRdnlLT2Exd3g3TmlvY0VLdlE9PSIsInZhbHVlIjoiSXBRdENBWVVrSWg2Y2VTdUVBWE9henowQkhUMU5xVHYySk5kN3ZjM2I3MytvVFYrS2VJN3V2VzZIVjQzUnZcLzZKbGJsQlB4Q1wvdWg2WGh1czlFY1BzZGcrVmh5ZGxXT1VWK1UyUnNoQTVkWWs2RUpnUnRMK0lOOGtZSHlaUmlDciIsIm1hYyI6IjMyYTUzNmQ0ODU4N2VmZmNmYjcxZjgzN2IxZTNhMDUyM2NkNGU5ODdjMzBjMjI2Yzk5NWRmM2JiODIzYWVlODYifQ==",
+   "referer": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json;charset=UTF-8"
+  },
+  "status": 200,
+  "file": "br_74.json",
+  "bytes": 64310
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20gzb810399206zd810399206xf1&_p=1794974613281&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AEAAAGQC&ae=a&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=4&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120412528~120420416~120469145~120469153~121246026~121246034&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&dr=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&sid=1794974598&sct=1&seg=1&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&_et=1007&tfd=2432",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_75.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=0&auid=45986693.1794974598&dt=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&scrsrc=www.googletagmanager.com&rnd=1259602335.1794974613&navt=n&npa=0&ae=a&gtm=45be6bg2v9213033721za20gzb810399206zd810399206xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&tft=1794974615194&tfd=2447&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_76.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/Program/iizuka/2026-11-17_12/program",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974615181&cv=11&fst=1794974615181&fmt=8&bg=ffffff&guid=ON&async=1&en=page_view&gtm=45be6bg2v9213033721za20gzb810399206zd810399206xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12%2Fprogram&ref=https%3A%2F%2Fautorace.jp%2Frace_info%2FProgram%2Fiizuka%2F2026-11-17_12&rcb=17&frm=0&tiba=2026%2F11%2F17%20%E5%87%BA%E8%B5%B0%E8%A1%A8%20%7C%20%E9%A3%AF%E5%A1%9A%E3%82%AA%E3%83%BC%E3%83%88%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&ae=a&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&data=event%3Dpage_view&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_77.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IjU2blpwZmp5WFdtalJnTjI4TmxUdmc9PSIsInZhbHVlIjoieThBSVJPMzI5NWk4ek41RTNseXRmdlZnXC9UK2NvdFp5TWtUejhtUXBTelwvQ0s3K1wvVGdcL0UxVWdoMG9lYzQydGlBSkxmZFBkcjNWWllXNmVqd1FJNHhqQ0NyazhwUGVZNFk5MkdHOUUxN1wvYlVwOTRxbDJPYlZsZEtrM0VpSGNzOCIsIm1hYyI6Ijg4NTMxZmFiOTc5MzFmNDExZjEzZTdlNjE3YWMxZjBlODE2OWY4YTM5YjZmNDQxN2QzOTk1ZGI4ODI1ODJhNDAifQ==",
+   "referer": "https://autorace.jp/race_info/SearchRace",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_78.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "x-xsrf-token": "eyJpdiI6IjU2blpwZmp5WFdtalJnTjI4TmxUdmc9PSIsInZhbHVlIjoieThBSVJPMzI5NWk4ek41RTNseXRmdlZnXC9UK2NvdFp5TWtUejhtUXBTelwvQ0s3K1wvVGdcL0UxVWdoMG9lYzQydGlBSkxmZFBkcjNWWllXNmVqd1FJNHhqQ0NyazhwUGVZNFk5MkdHOUUxN1wvYlVwOTRxbDJPYlZsZEtrM0VpSGNzOCIsIm1hYyI6Ijg4NTMxZmFiOTc5MzFmNDExZjEzZTdlNjE3YWMxZjBlODE2OWY4YTM5YjZmNDQxN2QzOTk1ZGI4ODI1ODJhNDAifQ==",
+   "referer": "https://autorace.jp/race_info/SearchRace",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "status": 200,
+  "file": "br_79.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://autorace.jp/race_info/XML/Hold/Today",
+  "method": "GET",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/race_info/SearchRace",
+   "accept-language": "ja-JP",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "sec-ch-ua-mobile": "?0",
+   "x-requested-with": "XMLHttpRequest",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "accept": "application/json, text/javascript, */*; q=0.01"
+  },
+  "status": 200,
+  "file": "br_80.json",
+  "bytes": 6559
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://www.google.com/ccm/collect?rcb=8&frm=0&apvc=1&ae=g&auid=45986693.1794974598&dt=%E9%81%B8%E6%89%8B%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E6%A4%9C%E7%B4%A2%20%7C%20%E5%85%A8%E5%9B%BD%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FSearchRace&scrsrc=www.googletagmanager.com&rnd=856534337.1794974619&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6bg2v810399206za200zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&tft=1794974618539&tfd=559&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_81.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-37DP3YV65V&gtm=45je6bg2v870058682za20ozb810399206zd810399206xf1&_p=1794974618483&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1985680079&_eu=AAAAAGQC&cid=637623144.1794974598&ec_mode=a&frm=0&pscdl=noapi&rcb=8&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=ja-jp&gaf=2&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~119793973~120213116~120385422~120412528~120420414~120469145~120469153~121246026~121246034~124320990&sid=1794974598&sct=1&seg=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FSearchRace&dt=%E9%81%B8%E6%89%8B%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E6%A4%9C%E7%B4%A2%20%7C%20%E5%85%A8%E5%9B%BD%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&en=page_view&tfd=584",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 204,
+  "file": "br_82.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1919521977&t=pageview&_s=1&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FSearchRace&ul=ja-jp&dt=%E9%81%B8%E6%89%8B%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E6%A4%9C%E7%B4%A2%20%7C%20%E5%85%A8%E5%9B%BD%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&sr=1280x720&vp=1280x720&_u=QACAAEABAAAAACAAI~&jid=&gjid=&cid=637623144.1794974598&tid=UA-15208250-1&_gid=314211792.1794974599&_slc=1&gtm=45He6bg2n81WT2DMXSv810399206za200zd810399206xf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034&z=993658640",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_83.json",
+  "bytes": 3
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://www.google.com/ccm/collect?rcb=17&frm=0&apvc=0&ae=g&auid=45986693.1794974598&dt=%E9%81%B8%E6%89%8B%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E6%A4%9C%E7%B4%A2%20%7C%20%E5%85%A8%E5%9B%BD%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&tid=AW-10996813064&dl=https%3A%2F%2Fautorace.jp%2Frace_info%2FSearchRace&scrsrc=www.googletagmanager.com&rnd=856534337.1794974619&navt=n&npa=0&_tu=CA&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034~124320991&tft=1794974618590&tfd=611&tids=AW-10996813064&fmt=8",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_84.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://www.google.com/rmkt/collect/10996813064/?random=1794974618586&cv=11&fst=1794974618586&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6bg2v9213033721z8810399206za20gzb810399206zd810399206xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120412528~120420416~120469145~120469153~121191153~121246026~121246034~124320991&u_w=1280&u_h=720&url=https%3A%2F%2Fautorace.jp%2Frace_info%2FSearchRace&rcb=17&frm=0&tiba=%E9%81%B8%E6%89%8B%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E6%A4%9C%E7%B4%A2%20%7C%20%E5%85%A8%E5%9B%BD%20%7C%20%E3%83%AC%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%20%7C%20AUTORACE.JP&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=45986693.1794974598&uaa=x86&uab=64&uafvl=HeadlessChrome%3B159.0.8154.6%7CNot%252FA)Brand%3B8.0.0.0%7CChromium%3B159.0.8154.6&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "method": "POST",
+  "post": null,
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "accept-language": "ja-JP",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "status": 200,
+  "file": "br_85.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://www.facebook.com/tr/",
+  "method": "POST",
+  "post": "------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"id\"\r\n\r\n1370471651216547\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"ev\"\r\n\r\nPageView\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"dl\"\r\n\r\nhttps://autorace.jp/race_info/SearchRace\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"rl\"\r\n\r\n\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"if\"\r\n\r\nfalse\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"ts\"\r\n\r\n1794974618610\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"iw\"\r\n\r\nfalse\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"sw\"\r\n\r\n1280\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"sh\"\r\n\r\n720\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"v\"\r\n\r\n2.9.441\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"r\"\r\n\r\nstable\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"ec\"\r\n\r\n0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"o\"\r\n\r\n77854\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"aems\"\r\n\r\n0;0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"fbp\"\r\n\r\nfb.1.1794974599089.736772383666757663\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"eid\"\r\n\r\nob3_plugin-set_a037cf6407eeaafe90870058a5e1bbbd8fbe8c764fd12af217ea7aa5d4f3cb10\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"ler\"\r\n\r\nempty\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"pmd[title]\"\r\n\r\n選手・データ検索 | 全国 | レース情報 | AUTORACE.JP\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"pmd[locale]\"\r\n\r\nja\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"pmd[description]\"\r\n\r\nオートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"pmd[keywords]\"\r\n\r\nオートレース,オート,バイク,レース,映像,ネット投票,ネット中継\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"plt\"\r\n\r\n515.4000000000087\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"iss\"\r\n\r\n1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"ss\"\r\n\r\n{\"page_type\":[{\"rid\":\"914823594953590\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"page_keywords\":[{\"rid\":\"965480693022438\",\"v\":[\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\"]},{\"rid\":\"1129456956378188\",\"v\":[\"開催日程･TV中継\"]},{\"rid\":\"1178565714762363\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"event_name\":[{\"rid\":\"969537122558787\",\"v\":[\"レース情報\"]}],\"publisher\":[{\"rid\":\"1034831182987962\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"page_title\":[{\"rid\":\"1071845202543414\",\"v\":[\"データ検索の使い方\"]},{\"rid\":\"1112934318405720\",\"v\":[\"選手検索\"]}],\"page_description\":[{\"rid\":\"1128025849941718\",\"v\":[\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\"]}],\"event_description\":[{\"rid\":\"1150884211071356\",\"v\":[\"レース情報\"]}],\"article_name\":[{\"rid\":\"1198083172564422\",\"v\":[\"レース情報\"]},{\"rid\":\"1766752201102515\",\"v\":[\"選手検索\"]}],\"entity_description\":[{\"rid\":\"1274891064846287\",\"v\":[\"レース情報\"]}],\"entity_name\":[{\"rid\":\"1452919669600339\",\"v\":[\"レース結果 検索\"]}],\"event_location\":[{\"rid\":\"1473290505014846\",\"v\":[\"浜松\"]}],\"page_url\":[{\"rid\":\"1668775858231330\",\"v\":[\"伊勢崎オート\"]},{\"rid\":\"1748540276250647\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"author\":[{\"rid\":\"1767137407682430\",\"v\":[\"ホーム\"]},{\"rid\":\"1834590371121032\",\"v\":[\"AUTORACE.JP投票とは\"]}],\"currencies_accepted\":[{\"rid\":\"1821641888871423\",\"v\":[\"川口オート\\n伊勢崎オート\\n浜松オート\\n飯塚オート\\n山陽オート\"]}],\"article_type\":[{\"rid\":\"1962500944744439\",\"v\":[\"伊勢崎オート\"]}]}\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"imft\"\r\n\r\n1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"tz\"\r\n\r\n0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"it\"\r\n\r\n1794974618577\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"coo\"\r\n\r\nfalse\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"cf\"\r\n\r\n1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[0]\"\r\n\r\nmr1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[1]\"\r\n\r\npl0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[2]\"\r\n\r\nel3\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[3]\"\r\n\r\nbc1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[4]\"\r\n\r\nra2\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[5]\"\r\n\r\nrp2\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[6]\"\r\n\r\nim0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[7]\"\r\n\r\nhf1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[8]\"\r\n\r\npr1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[9]\"\r\n\r\not1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[10]\"\r\n\r\nhv1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[11]\"\r\n\r\nrh0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[12]\"\r\n\r\nah0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[13]\"\r\n\r\nnv1\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"expv2[14]\"\r\n\r\noq0\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z\r\nContent-Disposition: form-data; name=\"rqm\"\r\n\r\nSB\r\n------WebKitFormBoundaryOJVaW0rXT0xAwP8Z--\r\n",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "multipart/form-data; boundary=----WebKitFormBoundaryOJVaW0rXT0xAwP8Z",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_86.json",
+  "bytes": 0
+ },
+ {
+  "page": "https://autorace.jp/race_info/SearchRace",
+  "url": "https://p0-b38350eb7d034b0fb67b0b36c767d56f.ecs.us-east-1.on.aws/events?cee=no",
+  "method": "POST",
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"page_type\\\":[{\\\"rid\\\":\\\"914823594953590\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"965480693022438\\\",\\\"v\\\":[\\\"オートレース,オート,バイク,レース,映像,ネット投票,ネット中継\\\"]},{\\\"rid\\\":\\\"1129456956378188\\\",\\\"v\\\":[\\\"開催日程･TV中継\\\"]},{\\\"rid\\\":\\\"1178565714762363\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"969537122558787\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1034831182987962\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1071845202543414\\\",\\\"v\\\":[\\\"データ検索の使い方\\\"]},{\\\"rid\\\":\\\"1112934318405720\\\",\\\"v\\\":[\\\"選手検索\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1128025849941718\\\",\\\"v\\\":[\\\"オートレースのオフィシャルサイトAUTORACE.JP(オートレース.JP) レース情報です。オートレースは競馬・競輪・ボートレースと並ぶ日本の公営ギャンブルです。日本に5か所（川口・伊勢崎・浜松・山陽・飯塚）にあり、バイクでオーバルコースを走るマシンスポーツとしても知られています。\\\"]}],\\\"event_description\\\":[{\\\"rid\\\":\\\"1150884211071356\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"article_name\\\":[{\\\"rid\\\":\\\"1198083172564422\\\",\\\"v\\\":[\\\"レース情報\\\"]},{\\\"rid\\\":\\\"1766752201102515\\\",\\\"v\\\":[\\\"選手検索\\\"]}],\\\"entity_description\\\":[{\\\"rid\\\":\\\"1274891064846287\\\",\\\"v\\\":[\\\"レース情報\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1452919669600339\\\",\\\"v\\\":[\\\"レース結果 検索\\\"]}],\\\"event_location\\\":[{\\\"rid\\\":\\\"1473290505014846\\\",\\\"v\\\":[\\\"浜松\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1668775858231330\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]},{\\\"rid\\\":\\\"1748540276250647\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1767137407682430\\\",\\\"v\\\":[\\\"ホーム\\\"]},{\\\"rid\\\":\\\"1834590371121032\\\",\\\"v\\\":[\\\"AUTORACE.JP投票とは\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1821641888871423\\\",\\\"v\\\":[\\\"川口オート\\\\n伊勢崎オート\\\\n浜松オート\\\\n飯塚オート\\\\n山陽オート\\\"]}],\\\"article_type\\\":[{\\\"rid\\\":\\\"1962500944744439\\\",\\\"v\\\":[\\\"伊勢崎オート\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_a037cf6407eeaafe90870058a5e1bbbd8fbe8c764fd12af217ea7aa5d4f3cb10\",\"fb.pixel_id\":\"1370471651216547\",\"website_context\":{\"location\":\"https://autorace.jp/race_info/SearchRace\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1794974599089.736772383666757663\"}",
+  "req_headers": {
+   "sec-ch-ua-platform": "\"Windows\"",
+   "referer": "https://autorace.jp/",
+   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
+   "sec-ch-ua": "\"HeadlessChrome\";v=\"159\", \"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"159\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "ja-JP"
+  },
+  "status": 200,
+  "file": "br_87.json",
+  "bytes": 0
+ }
+]
