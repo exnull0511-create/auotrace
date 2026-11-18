@@ -1,9 +1,13 @@
 name: probe-site-structure
 on:
   workflow_dispatch:
+    inputs:
+      script:
+        description: "tools/ の調査スクリプト名（拡張子なし）"
+        default: "probe2"
   push:
     branches: ["main", "claude/**"]
-    paths: ["tools/probe.py", ".github/workflows/probe.yml"]
+    paths: ["tools/probe*.py", ".github/workflows/probe.yml"]
 
 permissions:
   contents: write
@@ -18,7 +22,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install playwright requests beautifulsoup4 && python -m playwright install --with-deps chromium
-      - run: python tools/probe.py /tmp/samples
+      - run: python tools/${{ inputs.script || 'probe2' }}.py /tmp/samples
       - name: Push samples to probe-samples branch
         if: always()
         run: |
@@ -27,4 +31,4 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add -A && git commit -qm "probe samples $(date -u +%FT%TZ)"
-          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" probe-samples
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ inputs.script || 'probe2' }}-samples
