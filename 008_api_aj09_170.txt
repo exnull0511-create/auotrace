@@ -1,0 +1,1 @@
+{"result":"Success","errors":[],"body":{"date":"2026-11-18 12:57:30","amountList":{"four":{"amount":0,"totalRefundable":70,"jushouCpn":[]},"three":{"amount":0,"totalRefundable":0,"jushouCpn":[]}}}}

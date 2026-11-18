@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: red;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="長方形_4796" data-name="長方形 4796" class="cls-1" width="38" height="38" transform="translate(0 0.171)"/>
+    </clipPath>
+  </defs>
+  <g id="グループ_1287" data-name="グループ 1287" class="cls-2" transform="translate(0 -0.171)">
+    <path id="パス_2264" data-name="パス 2264" class="cls-3" d="M0,19.171a19,19,0,1,1,19,19A19,19,0,0,1,0,19.171Z"/>
+    <path id="パス_2265" data-name="パス 2265" class="cls-1" d="M28.71,14.479a2.573,2.573,0,0,0-1.792-1.84C25.338,12.2,19,12.2,19,12.2s-6.338,0-7.918.435a2.573,2.573,0,0,0-1.792,1.84,27.8,27.8,0,0,0-.423,5.009A27.8,27.8,0,0,0,9.29,24.5a2.573,2.573,0,0,0,1.792,1.84c1.58.435,7.918.435,7.918.435s6.338,0,7.918-.435A2.573,2.573,0,0,0,28.71,24.5a27.783,27.783,0,0,0,.424-5.009A27.782,27.782,0,0,0,28.71,14.479Z"/>
+    <path id="パス_2266" data-name="パス 2266" class="cls-3" d="M17.1,22.971V16.638L22.167,19.8Z"/>
+  </g>
+</svg>
