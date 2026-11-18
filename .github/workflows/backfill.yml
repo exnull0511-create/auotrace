@@ -1,12 +1,12 @@
 name: backfill-history
 on:
   schedule:
-    - cron: "20 */6 * * *"   # 6時間ごと。過去分を新しい日付から順に遡って取得（完了済みはスキップ）
+    - cron: "20 */6 * * *"   # 6時間ごと。過去分を年ごとに並列で、新しい日付から遡って取得（完了済みはスキップ）
   workflow_dispatch:
     inputs:
-      start:
-        description: "どこまで遡るか YYYY-MM-DD"
-        default: "2018-01-01"
+      from_year:
+        description: "どの年まで遡るか"
+        default: "2018"
       rounds:
         description: "30分×何回まわすか（最大10）"
         default: "10"
@@ -16,13 +16,30 @@ permissions:
   actions: write
 
 concurrency:
-  group: data-writer
+  group: backfill
   cancel-in-progress: false
 
 jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      years: ${{ steps.y.outputs.years }}
+    steps:
+      - id: y
+        run: |
+          from=${{ inputs.from_year || '2018' }}
+          now=$(TZ=Asia/Tokyo date +%Y)
+          echo "years=$(seq $now -1 $from | jq -R . | jq -sc .)" >> "$GITHUB_OUTPUT"
+
   backfill:
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 5          # サイトへの負荷を考えて同時に5本まで
+      matrix:
+        year: ${{ fromJson(needs.plan.outputs.years) }}
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -32,19 +49,37 @@ jobs:
           python-version: "3.11"
       - run: pip install -r collector/requirements.txt
       - run: bash tools/data_branch.sh checkout
-      - name: Backfill (30分ごとに保存)
+      - name: Backfill ${{ matrix.year }}年（30分ごとに保存）
         run: |
+          end=$(TZ=Asia/Tokyo date -d yesterday +%F)
+          [ "${{ matrix.year }}-12-31" \< "$end" ] && end="${{ matrix.year }}-12-31"
           for i in $(seq 1 ${{ inputs.rounds || '10' }}); do
-            python -m collector.run backfill --data data --start ${{ inputs.start || '2018-01-01' }} --max-minutes 30
-            bash tools/data_branch.sh push "backfill round $i"
+            python -m collector.run backfill --data data --start ${{ matrix.year }}-01-01 --end $end --max-minutes 30
+            bash tools/data_branch.sh push "backfill ${{ matrix.year }} round $i"
+            left=$(python -m collector.run remaining --data data --start ${{ matrix.year }}-01-01 --end $end)
+            echo "${{ matrix.year }}年の未取得: ${left}日"
+            [ "$left" -le 1 ] && break
           done
+
+  next:
+    needs: backfill
+    if: always()
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r collector/requirements.txt
+      - run: bash tools/data_branch.sh checkout
       - name: 未取得が残っていれば、すぐ次の実行を起動
-        if: success()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          left=$(python -m collector.run remaining --data data --start ${{ inputs.start || '2018-01-01' }})
-          echo "未取得: ${left}日"
-          if [ "$left" -gt 2 ]; then
-            gh workflow run backfill.yml --repo "${{ github.repository }}" --ref main -f start=${{ inputs.start || '2018-01-01' }}
+          left=$(python -m collector.run remaining --data data --start ${{ inputs.from_year || '2018' }}-01-01)
+          echo "全体の未取得: ${left}日"
+          if [ "$left" -gt 5 ]; then
+            gh workflow run backfill.yml --repo "${{ github.repository }}" --ref main -f from_year=${{ inputs.from_year || '2018' }}
           fi
