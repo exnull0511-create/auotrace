@@ -1,0 +1,35 @@
+name: odds-watch
+# 締切前オッズの時系列を記録。1回の実行で約5時間動き続け、10分ごとに data ブランチへ保存。
+# 3回で 10:00〜翌0:50（JST）をカバー（デイ・ナイター・ミッドナイト）。
+on:
+  schedule:
+    - cron: "55 0 * * *"    # 9:55 JST
+    - cron: "55 5 * * *"    # 14:55 JST
+    - cron: "55 10 * * *"   # 19:55 JST
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "何分動かすか"
+        default: "295"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odds-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 320
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r collector/requirements.txt
+      - run: bash tools/data_branch.sh checkout
+      - run: python -m collector.odds_watch --data data --minutes ${{ inputs.minutes || '295' }}
