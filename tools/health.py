@@ -9,7 +9,7 @@
   DIR/paper/summary.json     直前判定（ペーパートレード）の成績
 
 確認と自動対応
-  1. 開催がある日の 9:40〜24:00 にオッズ監視が動いているか → 止まっていれば起動
+  1. オッズ監視が動いているか（夜も止めずに動く作り）→ 止まっていれば時間に関係なく起動
   2. オッズ監視が固まっていないか（状態ファイルが45分以上更新なし）→ 止めて起動し直す
   3. オッズの記録が60分以上止まっていないか（開催中のみ）
   4. 前日のオッズ記録の取りこぼし（締切3分以内の記録があるレースが9割未満）
@@ -196,20 +196,20 @@ def main():
             latest = max(latest or t, t)
     # 1, 2. オッズ監視
     active = [r for r in W["odds-watch.yml"] if r["status"] in ACTIVE]
-    if race_day and "09:40" <= hm <= "23:50" and not (ws.get("state") == "finished" and ws.get("updated_at", "")[:10] == today):
-        if not active:
-            problems.append("開催日の開催時間中なのにオッズ監視が動いていなかった（自動で起動した）")
-            act("オッズ監視を起動", lambda: api("/actions/workflows/odds-watch.yml/dispatches", "POST", {"ref": "main"}))
-        else:
-            run = active[0]
-            started = jst(run.get("run_started_at") or run["created_at"])
-            age = (now - datetime.fromisoformat(ws["updated_at"])).total_seconds() / 60 if ws.get("updated_at") else None
-            rec_age = (now - latest).total_seconds() / 60 if latest else None
-            if run["status"] == "in_progress" and (now - started).total_seconds() > 50 * 60 and (age is None or age > 45) \
-                    and (rec_age is None or rec_age > 30):
-                problems.append(f"オッズ監視が固まっている（状態の更新が{'なし' if age is None else f'{age:.0f}分前'}）。止めて起動し直した")
-                act("オッズ監視を再起動", lambda: (api(f"/actions/runs/{run['id']}/cancel", "POST"),
-                                              api("/actions/workflows/odds-watch.yml/dispatches", "POST", {"ref": "main"})))
+    # オッズ監視は夜も止めずに動き続ける作りなので、動いていなければ時間に関係なく起動する
+    if not active:
+        (problems if race_day and "09:40" <= hm <= "23:50" else notes).append("オッズ監視が動いていなかった（自動で起動した）")
+        act("オッズ監視を起動", lambda: api("/actions/workflows/odds-watch.yml/dispatches", "POST", {"ref": "main"}))
+    elif race_day and "09:40" <= hm <= "23:50":
+        run = next((r for r in active if r["status"] == "in_progress"), active[0])   # 待ち状態の回より、動いている回を見る
+        started = jst(run.get("run_started_at") or run["created_at"])
+        age = (now - datetime.fromisoformat(ws["updated_at"])).total_seconds() / 60 if ws.get("updated_at") else None
+        rec_age = (now - latest).total_seconds() / 60 if latest else None
+        if run["status"] == "in_progress" and (now - started).total_seconds() > 50 * 60 and (age is None or age > 45) \
+                and (rec_age is None or rec_age > 30):
+            problems.append(f"オッズ監視が固まっている（状態の更新が{'なし' if age is None else f'{age:.0f}分前'}）。止めて起動し直した")
+            act("オッズ監視を再起動", lambda: (api(f"/actions/runs/{run['id']}/cancel", "POST"),
+                                          api("/actions/workflows/odds-watch.yml/dispatches", "POST", {"ref": "main"})))
 
     pending = [x for x in ws.get("next") or [] if x.get("close", "") > hm]
     if latest:
@@ -359,6 +359,8 @@ def dashboard(data, now, W, ws, status, paper, today_meets):
         else:
             nx = (ws.get("next") or [{}])[0]
             w_doing, w_mode = f"次の締切を待っている: {nx.get('race', '-')}（{nx.get('close', '-')}）", "wait"
+    elif active("odds-watch.yml") and wstate == "standby":
+        w_doing, w_mode = "今日のレースは終了。次の開催まで待機中（止まらずに翌日も見る）", "off"
     elif active("odds-watch.yml"):
         w_doing, w_mode = "出勤中（当日のレース一覧を取得中）", "busy"
     elif today_meets and "09:40" <= hm <= "23:50" and wstate != "finished":

@@ -4,7 +4,8 @@
   python -m collector.odds_watch --data DIR --minutes 295 [--push-every 10]
 
 締切（電話投票締切 telvoteTime）までの残り時間に応じて取得間隔を変える:
-  締切60〜30分前: 10分ごと / 30〜10分前: 5分ごと / 10〜3分前: 2分ごと / 3分前〜締切: 1分ごと / 締切3分後に最後の1回
+  締切60〜30分前: 10分ごと / 30〜10分前: 5分ごと / 10〜3分前: 2分ごと / 3〜2分前: 1分ごと / 2分前〜締切: 30秒ごと
+  （単勝の票の大半は締切直前に入るため最後を細かく） / 締切3分後に最後の1回
 1回分の記録: 時刻・締切まで何分・オッズ更新時刻・各賭式の票数・各車の試走タイム（発表済みなら）・全賭式のオッズ
 
 保存先: DIR/odds_ts/YYYY/YYYY-MM-DD/<場>_<R>.jsonl（1行=1回の取得）
@@ -13,7 +14,14 @@
   3連単オッズから出した1着確率 × その時点の単勝オッズ（=期待値）を全車について計算し
   DIR/paper/YYYY-MM-DD.jsonl に追記する。期待値1.2以上が推奨（実際には買わない）。
 LINE通知: 各レースで最初の直前判定（締切3分前ごろ）に推奨があれば、1レース1通だけ送る（collector/notify_line.py）。
-状態: DIR/health/watch_status.json（ダッシュボード用。見ているレース・次の締切）
+状態: DIR/health/watch_status.json（ダッシュボード用。見ているレース・次の締切）。
+  レースの無い時間も、見ているときは10分ごと・待機中は30分ごとに保存する（見張り係が「固まった」と誤判定しないように）。
+
+途切れずに動かし続ける仕組み（GitHub の予約実行は30分〜1時間半遅れたり飛ばされたりするので、それに頼らない）
+  - 1回は約5時間（--minutes）。その日のレースが終わっても止めず、夜は待機して翌日のレースもそのまま見る。
+  - 上限が近づいたら（残り15分から）、締切10分前以内のレースが無い瞬間に保存して終わり、次の回を自分で起動する。
+  - 手動で新しい回を起動すると（コードの更新後など）、新しい回は待ち状態になる。今の回はそれを見つけて、
+    同じく締切直前のレースが無い瞬間に保存して終わる（キャンセルしなくてよい。未保存の記録が消えない）。
 """
 from __future__ import annotations
 
@@ -38,6 +46,11 @@ def now():
     return datetime.now(JST)
 
 
+CALM = 10          # 引き継ぎで終わるとき、締切何分前以内のレースが無いことを確かめるか
+END_EARLY = 15     # 上限の何分前から、引き継いでよい瞬間を探すか
+END_LATE = 10      # 上限を何分過ぎたら、締切直前のレースがあっても終わるか（ワークフローの timeout より前）
+
+
 def interval(m: float) -> float:
     if m > 30:
         return 10
@@ -45,7 +58,9 @@ def interval(m: float) -> float:
         return 5
     if m > 3:
         return 2
-    return 1
+    if m > 2:
+        return 1
+    return 0.5
 
 
 class Watch:
@@ -147,9 +162,10 @@ class Watch:
         with p.open("a", encoding="utf-8") as fp:
             fp.write(json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n")
 
-    def write_status(self, state="watching"):
+    def write_status(self, state=None):
         t = now()
         rows = sorted(((k, v) for k, v in self.races.items() if not v["done"]), key=lambda x: x[1]["close"])
+        state = state or ("watching" if rows else "standby")   # standby = 今日のレースは終わり、翌日を待っている
         name = lambda v: f"{PLACES.get(v['meet']['place_code'], v['meet']['place_key'])}{v['rn']}R"  # noqa: E731
         st = {"updated_at": t.isoformat(timespec="seconds"), "state": state,
               "watching": [{"race": name(v), "close": v["close"].strftime("%H:%M")} for k, v in rows
@@ -183,6 +199,21 @@ class Watch:
         return n
 
 
+def newer_waiting():
+    """自分より新しい odds-watch の回（手動起動）が待ち状態か。予約実行の回は数えない（上限で終わるときに置き換わる）"""
+    import os
+    import urllib.request
+    tok, repo, me = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_RUN_ID")
+    if not tok or not repo or not me:
+        return None
+    h = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"}
+    req = urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/workflows/odds-watch.yml/runs?per_page=10", headers=h)
+    for r in json.load(urllib.request.urlopen(req, timeout=20)).get("workflow_runs", []):
+        if r["id"] > int(me) and r["status"] in ("queued", "pending", "waiting", "requested") and r.get("event") != "schedule":
+            return r["id"]
+    return None
+
+
 def gh_dispatch(workflow: str, only_if_idle_min: float | None = None):
     """GitHub Actions のワークフローを起動する（cron が遅れたり飛ばされたりするため、自分たちで起こし合う）"""
     import os
@@ -201,12 +232,19 @@ def gh_dispatch(workflow: str, only_if_idle_min: float | None = None):
                 age = (datetime.now(timezone.utc) - datetime.fromisoformat(r["created_at"].replace("Z", "+00:00"))).total_seconds() / 60
                 if age < only_if_idle_min:
                     return
-        req = urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/workflows/{workflow}/dispatches",
-                                     data=json.dumps({"ref": "main"}).encode(), method="POST", headers=h)
-        urllib.request.urlopen(req, timeout=20)
-        print("起動:", workflow, flush=True)
     except Exception as e:  # noqa: BLE001
-        print("起動に失敗:", workflow, e, flush=True)
+        print("確認に失敗:", workflow, e, flush=True)
+    for i in range(5):     # 起動に失敗すると監視が途切れるので、数回やり直す
+        try:
+            req = urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/workflows/{workflow}/dispatches",
+                                         data=json.dumps({"ref": "main"}).encode(), method="POST", headers=h)
+            urllib.request.urlopen(req, timeout=20)
+            print("起動:", workflow, flush=True)
+            return True
+        except Exception as e:  # noqa: BLE001
+            print("起動に失敗:", workflow, e, flush=True)
+            time.sleep(15 * (i + 1))
+    return False
 
 
 def push(msg):
@@ -223,9 +261,28 @@ def main(argv=None):
     cli = Client(sleep=0.5)
     w = Watch(a.data, cli)
     t0 = last_push = time.time()
-    last_health = 0.0
+    last_health = last_newer = 0.0
     snaps = 0
-    while (time.time() - t0) / 60 < a.minutes:
+    newer = None
+    reason = "時間切れ"
+    while True:
+        el = (time.time() - t0) / 60
+        # 引き継ぎ: 上限が近い、または新しい回（手動起動）が待っている → 締切直前のレースが無い瞬間に終わる
+        if not a.no_push and not newer and time.time() - last_newer > 120:
+            last_newer = time.time()
+            try:
+                newer = newer_waiting()
+                if newer:
+                    print(f"{now():%H:%M} 新しい回 {newer} が待っている。締切直前のレースが無い瞬間に引き継ぐ", flush=True)
+            except Exception as e:  # noqa: BLE001
+                print("新しい回の確認に失敗:", e, flush=True)
+        if newer or el >= a.minutes - END_EARLY:
+            t = now()
+            soon = [v for v in w.races.values() if not v["done"] and -3.5 <= (v["close"] - t).total_seconds() / 60 <= CALM]
+            if not soon or el >= a.minutes + END_LATE:
+                reason = "新しい回に引き継ぐ" if newer else "時間切れ"
+                print(f"{t:%H:%M} {reason}" + ("（締切直前のレースあり）" if soon else ""), flush=True)
+                break
         try:
             if w.sched_at is None or (now() - w.sched_at).total_seconds() > 20 * 60:
                 w.refresh_schedule()
@@ -238,22 +295,20 @@ def main(argv=None):
         except Exception as e:  # noqa: BLE001  1回の失敗で止めない
             print("エラー:", repr(e), flush=True)
             time.sleep(30)
-        if not a.no_push and (time.time() - last_push) / 60 >= a.push_every and snaps:
-            push(f"odds_ts {snaps} snaps")
+        # 記録があれば10分ごとに保存。レースの無い時間も状態ファイルを保存する（見ているとき10分・待機中30分ごと）
+        idle = not any(not v["done"] and (v["close"] - now()).total_seconds() < 60 * 60 for v in w.races.values())
+        if not a.no_push and (time.time() - last_push) / 60 >= (a.push_every if (snaps or not idle) else 30):
+            push(f"odds_ts {snaps} snaps" if snaps else "watch status")
             last_push, snaps = time.time(), 0
         if not a.no_push and time.time() - last_health > 30 * 60:   # 見張り係を30分ごとに起こす（cron頼みにしない）
             gh_dispatch("health.yml", only_if_idle_min=25)
             last_health = time.time()
-        if w.sched_at and not any(not v["done"] for v in w.races.values()) and (now().hour >= 22 or now().hour < 9):
-            print("今日のレースは全て締切済み。終了", flush=True)
-            w.write_status("finished")
-            snaps += 1
-            break
-        time.sleep(20)
-    if not a.no_push and snaps:
+        time.sleep(10 if any(not v["done"] and (v["close"] - now()).total_seconds() < 4 * 60 for v in w.races.values()) else 20)
+    w.write_status("handover")
+    if not a.no_push:
         push(f"odds_ts {snaps} snaps (final)")
-    # まだ今日の締切前レースが残っていれば、次の監視を自分で起動（予約実行が遅れても途切れないように）
-    if not a.no_push and any(not v["done"] for v in w.races.values()):
+    # 次の回を自分で起動（夜も翌日も途切れないように）。新しい回が待っているときは、それがそのまま始まる
+    if not a.no_push and not newer:
         gh_dispatch("odds-watch.yml")
 
 
