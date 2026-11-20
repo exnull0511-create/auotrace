@@ -1,1 +1,2 @@
 state/done.txt merge=union
+state/checked.txt merge=union
