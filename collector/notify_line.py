@@ -17,6 +17,9 @@ import urllib.request
 
 
 def enabled() -> bool:
+    # LINE_NOTIFY=off で一時停止（検証が済むまで止める等）
+    if os.environ.get("LINE_NOTIFY", "on").lower() in ("off", "0", "false"):
+        return False
     return bool(os.environ.get("LINE_CHANNEL_ACCESS_TOKEN") and os.environ.get("LINE_USER_ID"))
 
 

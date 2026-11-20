@@ -27,6 +27,8 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
       LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+      # 締切前のオッズが締切後に大きく崩れることがあるため、12/9の検証が済むまで通知を停止中（on で再開）
+      LINE_NOTIFY: "off"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
