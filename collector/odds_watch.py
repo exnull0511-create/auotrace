@@ -12,6 +12,7 @@
 直前判定（ペーパートレード）: 締切3分前〜締切の取得のたびに、
   3連単オッズから出した1着確率 × その時点の単勝オッズ（=期待値）を全車について計算し
   DIR/paper/YYYY-MM-DD.jsonl に追記する。期待値1.2以上が推奨（実際には買わない）。
+LINE通知: 各レースで最初の直前判定（締切3分前ごろ）に推奨があれば、1レース1通だけ送る（collector/notify_line.py）。
 状態: DIR/health/watch_status.json（ダッシュボード用。見ているレース・次の締切）
 """
 from __future__ import annotations
@@ -23,6 +24,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from . import notify_line
 from .autorace import PLACES, Client, SiteDown, f, flat_odds, month_meets
 
 JST = timezone(timedelta(hours=9))
@@ -132,6 +134,14 @@ class Watch:
         m = r["meet"]
         out = {"race_id": rid, "race": f"{PLACES.get(m['place_code'], m['place_key'])}{r['rn']}R", "close": rec["close"],
                "t": rec["t"], "m_left": rec["m_left"], "tns_sales": rec["sales"].get("単勝"), "cars": cars, "picks": picks}
+        if not r.get("notified"):          # 1レース1回だけ（締切3分前ごろの最初の判定）
+            r["notified"] = True
+            out["notified"] = True
+            if picks:
+                lines = [f"{out['race']} 締切{rec['close']}（あと{max(0, rec['m_left']):.0f}分）"]
+                lines += [f"単勝 {x['car']}番  {x['odds']}倍（期待値{x['ev']:.2f}）" for x in sorted(picks, key=lambda x: -x["ev"])]
+                lines.append("※検証中の推奨です（金額は1点数百円まで）")
+                out["line_sent"] = notify_line.send("\n".join(lines))
         p = self.root / "paper" / f"{m['date']}.jsonl"
         p.parent.mkdir(parents=True, exist_ok=True)
         with p.open("a", encoding="utf-8") as fp:
