@@ -40,10 +40,17 @@ class Store:
             sp.write_text(SCHEMA + "\n")
         self.done_path = root / "state" / "done.txt"
         self.done = set(self.done_path.read_text().split()) if self.done_path.exists() else set()
+        # 取り直し済み（それでもデータが揃わなかった＝中止など）の日。repair で何度も戻さないための記録
+        self.checked_path = root / "state" / "checked.txt"
+        self.checked = set(self.checked_path.read_text().split()) if self.checked_path.exists() else set()
 
     def mark_done(self, d: date):
         self.done.add(d.isoformat())
         self.done_path.write_text("\n".join(sorted(self.done)) + "\n")
+
+    def mark_checked(self, d: date):
+        self.checked.add(d.isoformat())
+        self.checked_path.write_text("\n".join(sorted(self.checked)) + "\n")
 
     def race_file(self, d: date) -> Path:
         p = self.root / "races" / f"{d.year}" / f"{d.isoformat()}.jsonl.gz"
@@ -95,14 +102,45 @@ def do_date(cli: Client, st: Store, d: date) -> int:
     races, complete = races_on(cli, st, d)
     if races:
         st.write_day(d, races)
-    if complete:   # 開催の無い日も「完了」（カレンダーで確認済み）
+    old = (today_jst() - d).days > 7
+    if complete or old:   # 開催の無い日も「完了」。7日以上前の日は中止レースがあっても完了扱い（何度取り直しても変わらない）
         st.mark_done(d)
+    if old:
+        st.mark_checked(d)
     return len(races)
+
+
+def repair(cli: Client, st: Store, start: date):
+    """カレンダーを取り直し、開催があったのにデータが無い（または場が足りない）日を「未取得」に戻す"""
+    import gzip as _gz
+    d, months = start.replace(day=1), []
+    while d <= today_jst():
+        months.append(d.strftime("%Y-%m"))
+        d = (d + timedelta(days=32)).replace(day=1)
+    reopened = []
+    for ym in months:
+        meets = st.calendar(cli, ym, refresh=True)
+        by_day = {}
+        for m in meets:
+            by_day.setdefault(m["date"], set()).add(m["place_key"])
+        for ds, places in sorted(by_day.items()):
+            if date.fromisoformat(ds) >= today_jst():
+                continue
+            fp = st.race_file(date.fromisoformat(ds))
+            have = set()
+            if fp.exists():
+                for line in _gz.open(fp, "rt", encoding="utf-8"):
+                    have.add(json.loads(line)["race_id"].split("_")[1])
+            if not places <= have and ds in st.done and ds not in st.checked:
+                st.done.discard(ds)
+                reopened.append(f"{ds}({','.join(sorted(places - have))})")
+    st.done_path.write_text("\n".join(sorted(st.done)) + "\n")
+    print(f"未取得に戻した日: {len(reopened)}", " ".join(reopened), flush=True)
 
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["collect", "backfill", "remaining"])
+    ap.add_argument("cmd", choices=["collect", "backfill", "remaining", "repair"])
     ap.add_argument("--data", required=True, type=Path)
     ap.add_argument("--date")
     ap.add_argument("--start", default="2018-01-01")
@@ -120,6 +158,10 @@ def main(argv=None):
                     print(d, "races:", do_date(cli, st, d), f"requests={cli.n}", flush=True)
                 except SiteDown as e:
                     print("サイト応答なし:", e)
+        return
+
+    if a.cmd == "repair":
+        repair(cli, st, date.fromisoformat(a.start))
         return
 
     end = date.fromisoformat(a.end) if a.end else today_jst() - timedelta(days=1)

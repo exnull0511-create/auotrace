@@ -20,6 +20,7 @@ elif [ "$cmd" = push ]; then
   git config user.email actions@github.com
   # 並列で書き込む別ジョブとの衝突対策: 完了日付の一覧は両方の行を残して合流させる
   grep -q "done.txt merge=union" .gitattributes 2>/dev/null || echo "state/done.txt merge=union" >> .gitattributes
+  grep -q "checked.txt merge=union" .gitattributes 2>/dev/null || echo "state/checked.txt merge=union" >> .gitattributes
   git add -A
   if ! git diff --cached --quiet; then
     git -c user.name=github-actions -c user.email=actions@github.com commit -qm "${2:-update} $(date -u +%FT%TZ)"

@@ -20,7 +20,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  repair:
+    # 開催があったのにデータが無い日を探して「未取得」に戻す（毎回カレンダーを取り直すので数分かかる）
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r collector/requirements.txt
+      - run: bash tools/data_branch.sh checkout
+      - run: python -m collector.run repair --data data --start ${{ inputs.from_year || '2018' }}-01-01
+      - run: bash tools/data_branch.sh push "repair"
+
   plan:
+    needs: repair
     runs-on: ubuntu-latest
     outputs:
       years: ${{ steps.y.outputs.years }}
@@ -58,7 +75,7 @@ jobs:
             bash tools/data_branch.sh push "backfill ${{ matrix.year }} round $i"
             left=$(python -m collector.run remaining --data data --start ${{ matrix.year }}-01-01 --end $end)
             echo "${{ matrix.year }}年の未取得: ${left}日"
-            [ "$left" -le 1 ] && break
+            if [ "$left" -le 1 ]; then break; fi
           done
 
   next:

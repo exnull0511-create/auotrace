@@ -93,10 +93,15 @@ def month_meets(cli: Client, ym: str) -> list[dict] | None:
     for v in j.get("body") or []:
         for dd in v.get("calendar") or []:
             race = dd.get("race")
-            if not isinstance(race, dict) or not race.get("finalRaceNo"):
+            if not isinstance(race, dict) or not race:
                 continue
+            last = race.get("finalRaceNo")
+            if not last:
+                # 開催が始まったばかりの日程は最終レース番号が空のことがある → 1Rの情報から取る（取れなければ12R）
+                j = cli.call("POST", "/race_info/OtherRaceInfo", {"placeCode": v["placeCode"], "raceDate": dd["date"], "raceNo": 1})
+                last = ((j or {}).get("body") or {}).get("finalRaceNo") or 12
             out.append({"place_code": v["placeCode"], "place_key": v["placeKey"], "date": dd["date"],
-                        "last_race": int(race["finalRaceNo"]), "grade": race.get("gradeName"),
+                        "last_race": int(last), "grade": race.get("gradeName"),
                         "title": race.get("title"), "nighter": race.get("nighterName") or None,
                         "day": race.get("paragraphDay"), "days": race.get("days")})
     return out
