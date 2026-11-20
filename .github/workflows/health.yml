@@ -2,7 +2,7 @@ name: health
 # 収集の健康チェックとダッシュボード用データの作成（tools/health.py）。異常は Issue で知らせ、オッズ監視が止まっていれば起動する。
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "7,37 * * * *"   # 0分・30分ちょうどは混んで飛ばされやすいのでずらす。開催中はオッズ監視からも30分ごとに起動される
   workflow_dispatch:
 
 permissions:

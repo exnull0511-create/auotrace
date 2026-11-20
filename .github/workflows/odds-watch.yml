@@ -1,11 +1,15 @@
 name: odds-watch
 # 締切前オッズの時系列を記録。1回の実行で約5時間動き続け、10分ごとに data ブランチへ保存。
-# 3回で 10:00〜翌0:50（JST）をカバー（デイ・ナイター・ミッドナイト）。
+# GitHub の予約実行は遅れたり飛ばされたりするので、朝は時刻をずらして3回予約し、
+# 1回終わるときにまだレースが残っていれば自分で次を起動する（同時に動くのは1つだけ。待ちは1つまで）。
+# 監視中は見張り係（health）も30分ごとに起こす。
 on:
   schedule:
-    - cron: "55 0 * * *"    # 9:55 JST
-    - cron: "55 5 * * *"    # 14:55 JST
-    - cron: "55 10 * * *"   # 19:55 JST
+    - cron: "23 0 * * *"    # 9:23 JST
+    - cron: "41 0 * * *"    # 9:41 JST
+    - cron: "7 1 * * *"     # 10:07 JST
+    - cron: "17 6 * * *"    # 15:17 JST（自分で次を起動できなかったときの保険）
+    - cron: "17 11 * * *"   # 20:17 JST（同上）
   workflow_dispatch:
     inputs:
       minutes:
@@ -14,6 +18,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: odds-watch

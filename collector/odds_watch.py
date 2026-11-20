@@ -183,6 +183,32 @@ class Watch:
         return n
 
 
+def gh_dispatch(workflow: str, only_if_idle_min: float | None = None):
+    """GitHub Actions のワークフローを起動する（cron が遅れたり飛ばされたりするため、自分たちで起こし合う）"""
+    import os
+    import urllib.request
+    tok, repo = os.environ.get("GITHUB_TOKEN"), os.environ.get("GITHUB_REPOSITORY")
+    if not tok or not repo:
+        return
+    h = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"}
+    try:
+        if only_if_idle_min is not None:
+            req = urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/workflows/{workflow}/runs?per_page=3", headers=h)
+            runs = json.load(urllib.request.urlopen(req, timeout=20)).get("workflow_runs", [])
+            for r in runs:
+                if r["status"] != "completed":
+                    return
+                age = (datetime.now(timezone.utc) - datetime.fromisoformat(r["created_at"].replace("Z", "+00:00"))).total_seconds() / 60
+                if age < only_if_idle_min:
+                    return
+        req = urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/workflows/{workflow}/dispatches",
+                                     data=json.dumps({"ref": "main"}).encode(), method="POST", headers=h)
+        urllib.request.urlopen(req, timeout=20)
+        print("起動:", workflow, flush=True)
+    except Exception as e:  # noqa: BLE001
+        print("起動に失敗:", workflow, e, flush=True)
+
+
 def push(msg):
     subprocess.run(["bash", "tools/data_branch.sh", "push", msg], check=False)
 
@@ -197,6 +223,7 @@ def main(argv=None):
     cli = Client(sleep=0.5)
     w = Watch(a.data, cli)
     t0 = last_push = time.time()
+    last_health = 0.0
     snaps = 0
     while (time.time() - t0) / 60 < a.minutes:
         try:
@@ -214,7 +241,10 @@ def main(argv=None):
         if not a.no_push and (time.time() - last_push) / 60 >= a.push_every and snaps:
             push(f"odds_ts {snaps} snaps")
             last_push, snaps = time.time(), 0
-        if w.sched_at and not any(not v["done"] for v in w.races.values()) and now().hour >= 22:
+        if not a.no_push and time.time() - last_health > 30 * 60:   # 見張り係を30分ごとに起こす（cron頼みにしない）
+            gh_dispatch("health.yml", only_if_idle_min=25)
+            last_health = time.time()
+        if w.sched_at and not any(not v["done"] for v in w.races.values()) and (now().hour >= 22 or now().hour < 9):
             print("今日のレースは全て締切済み。終了", flush=True)
             w.write_status("finished")
             snaps += 1
@@ -222,6 +252,9 @@ def main(argv=None):
         time.sleep(20)
     if not a.no_push and snaps:
         push(f"odds_ts {snaps} snaps (final)")
+    # まだ今日の締切前レースが残っていれば、次の監視を自分で起動（予約実行が遅れても途切れないように）
+    if not a.no_push and any(not v["done"] for v in w.races.values()):
+        gh_dispatch("odds-watch.yml")
 
 
 if __name__ == "__main__":
