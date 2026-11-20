@@ -8,6 +8,11 @@
 1回分の記録: 時刻・締切まで何分・オッズ更新時刻・各賭式の票数・各車の試走タイム（発表済みなら）・全賭式のオッズ
 
 保存先: DIR/odds_ts/YYYY/YYYY-MM-DD/<場>_<R>.jsonl（1行=1回の取得）
+
+直前判定（ペーパートレード）: 締切3分前〜締切の取得のたびに、
+  3連単オッズから出した1着確率 × その時点の単勝オッズ（=期待値）を全車について計算し
+  DIR/paper/YYYY-MM-DD.jsonl に追記する。期待値1.2以上が推奨（実際には買わない）。
+状態: DIR/health/watch_status.json（ダッシュボード用。見ているレース・次の締切）
 """
 from __future__ import annotations
 
@@ -18,11 +23,12 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from .autorace import Client, SiteDown, f, flat_odds, month_meets
+from .autorace import PLACES, Client, SiteDown, f, flat_odds, month_meets
 
 JST = timezone(timedelta(hours=9))
 POOLS = {"rt3OddsList": "3連単", "rf3OddsList": "3連複", "rtwOddsList": "2連単", "rfwOddsList": "2連複",
          "widOddsList": "ワイド", "tnsOddsList": "単勝", "fnsOddsList": "複勝"}
+RULE = 1.2   # 推奨にする期待値の下限
 SALES = {"rt3": "3連単", "rf3": "3連複", "rtw": "2連単", "rfw": "2連複", "wid": "ワイド", "tns": "単勝", "fns": "複勝"}
 
 
@@ -45,6 +51,7 @@ class Watch:
         self.root, self.cli = root, cli
         self.races = {}      # race_id -> dict(meet, rn, close, start, last, done)
         self.sched_at = None
+        self.self_stat = {}
 
     def refresh_schedule(self):
         """今日と昨日（深夜開催）の開催を調べ、各レースの締切時刻を得る"""
@@ -103,7 +110,45 @@ class Watch:
         p.parent.mkdir(parents=True, exist_ok=True)
         with p.open("a", encoding="utf-8") as fp:
             fp.write(json.dumps(rec, ensure_ascii=False, separators=(",", ":")) + "\n")
+        self.self_stat["ok"] = self.self_stat.get("ok", 0) + 1
+        if 0 <= m_left <= 3.2:
+            self.judge(rid, r, rec)
         return True
+
+    def judge(self, rid, r, rec):
+        """締切直前のオッズで推奨を判定して paper/ に記録"""
+        t3, tns = rec["odds"].get("3連単") or {}, rec["odds"].get("単勝") or {}
+        if not t3 or not tns:
+            return
+        q = {k: 1 / v for k, v in t3.items() if v}
+        s = sum(q.values())
+        win = {}
+        for k, x in q.items():
+            c = k.split("-")[0]
+            win[c] = win.get(c, 0) + x / s
+        cars = [{"car": c, "odds": o, "p": round(win.get(c, 0), 4), "ev": round(win.get(c, 0) * o, 3)}
+                for c, o in sorted(tns.items(), key=lambda x: int(x[0]))]
+        picks = [x for x in cars if x["ev"] >= RULE]
+        m = r["meet"]
+        out = {"race_id": rid, "race": f"{PLACES.get(m['place_code'], m['place_key'])}{r['rn']}R", "close": rec["close"],
+               "t": rec["t"], "m_left": rec["m_left"], "tns_sales": rec["sales"].get("単勝"), "cars": cars, "picks": picks}
+        p = self.root / "paper" / f"{m['date']}.jsonl"
+        p.parent.mkdir(parents=True, exist_ok=True)
+        with p.open("a", encoding="utf-8") as fp:
+            fp.write(json.dumps(out, ensure_ascii=False, separators=(",", ":")) + "\n")
+
+    def write_status(self, state="watching"):
+        t = now()
+        rows = sorted(((k, v) for k, v in self.races.items() if not v["done"]), key=lambda x: x[1]["close"])
+        name = lambda v: f"{PLACES.get(v['meet']['place_code'], v['meet']['place_key'])}{v['rn']}R"  # noqa: E731
+        st = {"updated_at": t.isoformat(timespec="seconds"), "state": state,
+              "watching": [{"race": name(v), "close": v["close"].strftime("%H:%M")} for k, v in rows
+                           if -3 <= (v["close"] - t).total_seconds() / 60 <= 60],
+              "next": [{"race": name(v), "close": v["close"].strftime("%H:%M")} for k, v in rows[:3]],
+              "stat": self.self_stat}
+        p = self.root / "health" / "watch_status.json"
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps(st, ensure_ascii=False), encoding="utf-8")
 
     def tick(self):
         t = now()
@@ -148,6 +193,7 @@ def main(argv=None):
             if w.sched_at is None or (now() - w.sched_at).total_seconds() > 20 * 60:
                 w.refresh_schedule()
             snaps += w.tick()
+            w.write_status()
         except SiteDown as e:
             print("サイト応答なし:", e, flush=True)
             cli.fail_streak = 0
@@ -160,6 +206,8 @@ def main(argv=None):
             last_push, snaps = time.time(), 0
         if w.sched_at and not any(not v["done"] for v in w.races.values()) and now().hour >= 22:
             print("今日のレースは全て締切済み。終了", flush=True)
+            w.write_status("finished")
+            snaps += 1
             break
         time.sleep(20)
     if not a.no_push and snaps:
