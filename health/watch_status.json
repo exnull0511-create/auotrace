@@ -1,1 +1,1 @@
-{"updated_at": "2026-11-22T11:42:33+09:00", "state": "watching", "watching": [{"race": "浜松4R", "close": "11:49"}, {"race": "浜松5R", "close": "12:17"}], "next": [{"race": "浜松4R", "close": "11:49"}, {"race": "浜松5R", "close": "12:17"}, {"race": "浜松6R", "close": "12:45"}], "stat": {"ok": 70}}
+{"updated_at": "2026-11-22T11:52:48+09:00", "state": "watching", "watching": [{"race": "浜松5R", "close": "12:17"}, {"race": "浜松6R", "close": "12:45"}], "next": [{"race": "浜松5R", "close": "12:17"}, {"race": "浜松6R", "close": "12:45"}, {"race": "浜松7R", "close": "13:14"}], "stat": {"ok": 82}}
