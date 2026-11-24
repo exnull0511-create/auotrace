@@ -39,6 +39,37 @@ JST = timezone(timedelta(hours=9))
 POOLS = {"rt3OddsList": "3連単", "rf3OddsList": "3連複", "rtwOddsList": "2連単", "rfwOddsList": "2連複",
          "widOddsList": "ワイド", "tnsOddsList": "単勝", "fnsOddsList": "複勝"}
 RULE = 1.2   # 推奨にする期待値の下限
+# 単勝以外の賭式のペーパートレード（2026-11-24〜）。過去データで割安な目が残りやすかったオッズ帯に絞る（ai/pool_gap2.py）
+POOL_RULES = {"ワイド": (0, 1e9), "2連単": (10, 100), "2連複": (0, 30), "3連複": (10, 100)}
+
+
+def pool_picks(odds: dict, th: float = RULE) -> dict:
+    """3連単オッズから各賭式の組み合わせの確率を出し、期待値（確率×その賭式のオッズ）が th 以上の目を返す。
+    ワイドはオッズの下限で計算。戻り値 {賭式: [{"key","odds","p","ev"}]}"""
+    t3 = odds.get("3連単") or {}
+    q = {k: 1 / v for k, v in t3.items() if v}
+    s = sum(q.values())
+    if not s:
+        return {}
+    imp = {p: {} for p in POOL_RULES}
+    for k, x in q.items():
+        a, b, c = k.split("-")
+        pr = x / s
+        srt = lambda *v: "-".join(sorted(v, key=int))  # noqa: E731
+        for pool, key in (("2連単", f"{a}-{b}"), ("2連複", srt(a, b)), ("3連複", srt(a, b, c))):
+            imp[pool][key] = imp[pool].get(key, 0) + pr
+        for k2 in {srt(a, b), srt(a, c), srt(b, c)}:
+            imp["ワイド"][k2] = imp["ワイド"].get(k2, 0) + pr
+    out = {}
+    for pool, (lo, hi) in POOL_RULES.items():
+        ps = []
+        for k, pr in imp[pool].items():
+            v = (odds.get(pool) or {}).get(k)
+            o = v[0] if isinstance(v, list) else v
+            if o and lo <= o < hi and pr * o >= th:
+                ps.append({"key": k, "odds": o, "p": round(pr, 4), "ev": round(pr * o, 3)})
+        out[pool] = sorted(ps, key=lambda x: -x["ev"])
+    return out
 SALES = {"rt3": "3連単", "rf3": "3連複", "rtw": "2連単", "rfw": "2連複", "wid": "ワイド", "tns": "単勝", "fns": "複勝"}
 
 
@@ -148,7 +179,8 @@ class Watch:
         picks = [x for x in cars if x["ev"] >= RULE]
         m = r["meet"]
         out = {"race_id": rid, "race": f"{PLACES.get(m['place_code'], m['place_key'])}{r['rn']}R", "close": rec["close"],
-               "t": rec["t"], "m_left": rec["m_left"], "tns_sales": rec["sales"].get("単勝"), "cars": cars, "picks": picks}
+               "t": rec["t"], "m_left": rec["m_left"], "tns_sales": rec["sales"].get("単勝"), "cars": cars, "picks": picks,
+               "pool_picks": pool_picks(rec["odds"]), "sales": rec["sales"]}
         if not r.get("notified"):          # 1レース1回だけ（締切3分前ごろの最初の判定）
             r["notified"] = True
             out["notified"] = True

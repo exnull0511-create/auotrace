@@ -123,39 +123,81 @@ def success_rate(rs, n=14):
 
 # ---------------- ペーパートレードの成績 ----------------
 
+POOLS = ["単勝", "ワイド", "2連単", "2連複", "3連複"]
+
+
+def race_hits(r):
+    """賭式ごとの的中の組み合わせ → 100円あたりの払戻倍率（確定オッズ。ワイドは払戻金）"""
+    o = sorted([x for x in r["result"] if x.get("order")], key=lambda x: x["order"])
+    if len(o) < 3:
+        return {}
+    a, b, c = (str(x["car"]) for x in o[:3])
+    srt = lambda *v: "-".join(sorted(v, key=int))  # noqa: E731
+    h = {"単勝": a, "2連単": f"{a}-{b}", "2連複": srt(a, b), "3連複": srt(a, b, c)}
+    out = {p: {k: (r["odds"].get(p) or {}).get(k) or 0} for p, k in h.items()}
+    out["ワイド"] = {}
+    for x in ((r["refund"].get("ワイド") or {}).get("list") or []):
+        if x.get("1thCarNo") and x.get("2thCarNo"):
+            out["ワイド"][srt(str(x["1thCarNo"]), str(x["2thCarNo"]))] = x["refund"] / 100
+    return out
+
+
 def paper_summary(data):
-    """各レースで締切に一番近い判定の推奨を、確定オッズで払い戻したとする"""
+    """直前判定の推奨を確定オッズで払い戻したとする。
+    単勝は従来どおり「締切に一番近い判定」（days/total）。
+    賭式別（by_pool）は「最初の判定＝締切3分前ごろ（実際に買える時点）」と「最後の判定＝締切直前」の両方を出す。"""
     tot = {"bets": 0, "hits": 0, "ret": 0.0}
     days = []
+    by = {t: {p: {"bets": 0, "hits": 0, "ret": 0.0} for p in POOLS} for t in ("first", "last")}
     for pf in sorted(glob.glob(str(data / "paper" / "*.jsonl"))):
         d = Path(pf).stem
         rf = data / "races" / d[:4] / f"{d}.jsonl.gz"
         if not rf.exists():
             continue
-        res = {}
-        for r in read_gz(rf):
-            w = [x["car"] for x in r["result"] if x.get("order") == 1]
-            res[r["race_id"]] = (str(w[0]) if w else None, r["odds"].get("単勝") or {})
-        last = {}
+        res = {r["race_id"]: race_hits(r) for r in read_gz(rf)}
+        first, last = {}, {}
         for x in read_jsonl(pf):
             if x["race_id"] not in last or x["m_left"] <= last[x["race_id"]]["m_left"]:
                 last[x["race_id"]] = x
+            if x["race_id"] not in first or x["m_left"] > first[x["race_id"]]["m_left"]:
+                first[x["race_id"]] = x
         day = {"date": d, "bets": 0, "hits": 0, "ret": 0.0}
         for rid, x in last.items():
-            if rid not in res:
+            h = res.get(rid)
+            if not h:
                 continue
-            win, final = res[rid]
             for p in x["picks"]:
                 day["bets"] += 1
-                if p["car"] == win:
+                pay = h["単勝"].get(p["car"]) or 0
+                if pay:
                     day["hits"] += 1
-                    day["ret"] += final.get(p["car"]) or 0
+                    day["ret"] += pay
+        for t, sel in (("first", first), ("last", last)):
+            for rid, x in sel.items():
+                h = res.get(rid)
+                if not h:
+                    continue
+                picks = {"単勝": [p["car"] for p in x["picks"]]}
+                if "pool_picks" in x:
+                    picks.update({pl: [p["key"] for p in v] for pl, v in x["pool_picks"].items()})
+                elif t:   # 11/24以前の記録は単勝だけ
+                    pass
+                for pl, keys in picks.items():
+                    for k in keys:
+                        st = by[t][pl]
+                        st["bets"] += 1
+                        pay = h[pl].get(k) or 0
+                        if pay:
+                            st["hits"] += 1
+                            st["ret"] += pay
         days.append(day)
         for k in tot:
             tot[k] += day[k]
     roi = lambda t: round(t["ret"] / t["bets"] * 100, 1) if t["bets"] else None  # noqa: E731
     return {"rule": f"期待値{RULE}以上の単勝（締切3分前〜締切の最後の判定）", "total": {**tot, "roi": roi(tot)},
-            "days": [{**x, "roi": roi(x)} for x in days]}
+            "days": [{**x, "roi": roi(x)} for x in days],
+            "by_pool": {t: {p: {**v, "roi": roi(v)} for p, v in pools.items()} for t, pools in by.items()},
+            "by_pool_note": "ワイド・2連単(10〜100倍)・2連複(30倍未満)・3連複(10〜100倍)は11/24夜から記録。first=締切3分前ごろ（買える時点）/ last=締切直前"}
 
 
 def main():
@@ -422,6 +464,7 @@ def dashboard(data, now, W, ws, status, paper, today_meets):
         ],
         "backtest": {"label": "過去の確定オッズでの成績（2018〜）", "note": "約5万レース・28,250点・的中率13.3%・回収率167%（確定オッズで計算した参考値）"},
         "coverage_days": cov_days,
+        "paper_pools": paper.get("by_pool"),
     }
 
 
