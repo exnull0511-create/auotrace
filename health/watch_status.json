@@ -1,1 +1,1 @@
-{"updated_at": "2026-11-24T18:08:23+09:00", "state": "watching", "watching": [{"race": "川口1R", "close": "18:48"}], "next": [{"race": "川口1R", "close": "18:48"}, {"race": "川口2R", "close": "19:13"}, {"race": "川口3R", "close": "19:38"}], "stat": {"ok": 3}}
+{"updated_at": "2026-11-24T18:18:35+09:00", "state": "watching", "watching": [{"race": "川口1R", "close": "18:48"}, {"race": "川口2R", "close": "19:13"}], "next": [{"race": "川口1R", "close": "18:48"}, {"race": "川口2R", "close": "19:13"}, {"race": "川口3R", "close": "19:38"}], "stat": {"ok": 5}}
