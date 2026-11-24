@@ -57,6 +57,7 @@
 | `ai/model.py` | 市場＋14項目の条件付きロジット（学習/検証分割） |
 | `ai/pool_gap.py` | 単勝と3連単のオッズの食い違い（確定オッズ） |
 | `ai/odds_timing.py` | 同じ食い違いが締切◯分前のオッズでも残るか |
+| `ai/pool_gap2.py` | 3連単と他の賭式（ワイド・2連単・2連複・3連複・単勝）の食い違い（学習/検証分割） |
 | `docs/index.html` | ダッシュボード（GitHub Pages）。`data` ブランチの `health/dashboard.json` を読む |
 
 ### GitHub Actions
@@ -82,8 +83,8 @@ state/done.txt                   取得完了日（merge=union）
 state/checked.txt                取り直し済みの日（merge=union）
 state/calendar/YYYY-MM.json      開催カレンダーのキャッシュ
 odds_ts/YYYY/YYYY-MM-DD/<場key>_<R>.jsonl   締切前オッズ（1行=1回の取得。m_left=締切まで何分）
-paper/YYYY-MM-DD.jsonl           直前判定（全車の期待値・推奨・notified）
-paper/summary.json               ペーパートレード成績
+paper/YYYY-MM-DD.jsonl           直前判定（単勝: 全車の期待値・推奨・notified / pool_picks: ワイド・2連単・2連複・3連複の割安な目）
+paper/summary.json               ペーパートレード成績（by_pool: 賭式別 first=締切3分前ごろ / last=締切直前）
 health/status.json, log.jsonl, dashboard.json, watch_status.json
 ```
 - 並列で書き込むため、push は `git pull --rebase -X theirs` で再試行し、`done.txt`/`checked.txt` は `.gitattributes` の `merge=union` で行を合流させる。
