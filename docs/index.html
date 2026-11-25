@@ -109,16 +109,18 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lamp);outline-offse
   <div class="board" id="board"></div>
   <div class="office" id="office"></div>
   <section>
-    <h3>今日の推奨（締切直前の判定・単勝）</h3>
-    <div class="tw"><table><thead><tr><th>締切</th><th>レース</th><th>車番</th><th>単勝オッズ</th><th>1着確率</th><th>期待値</th></tr></thead><tbody id="picks"></tbody></table></div>
-    <p class="foot" style="margin-top:8px">期待値 = 3連単オッズから出した1着確率 × その時点の単勝オッズ。1.2以上を推奨として記録（ペーパートレード・実際には買っていません）。</p>
+    <h3>今日の推奨（締切3分前ごろの判定・全賭式）</h3>
+    <div class="tw"><table><thead><tr><th>締切</th><th>レース</th><th>賭式</th><th>買い目</th><th>オッズ</th><th>確率</th><th>期待値</th></tr></thead><tbody id="picks"></tbody></table></div>
+    <p class="foot" style="margin-top:8px">期待値 = 3連単オッズから出したその目の確率 × その時点のオッズ（ワイドは下限）。1.2以上を推奨として記録（ペーパートレード・実際には買っていません）。各レースの最初の判定＝実際に買える時点のもの。</p>
   </section>
   <section>
     <h3>オッズ記録とペーパートレードの日別</h3>
     <div class="tw"><table><thead><tr><th>日付</th><th>レース</th><th>締切3分以内の記録</th><th>直前判定</th><th>推奨</th><th>的中</th><th>回収率</th></tr></thead><tbody id="days"></tbody></table></div>
     <h3 style="margin-top:18px">賭式別のペーパートレード（累計）</h3>
     <div class="tw"><table><thead><tr><th>賭式</th><th>買える時点（締切3分前ごろ）</th><th>締切直前（参考・実際には買えない）</th></tr></thead><tbody id="pools"></tbody></table></div>
-    <p class="foot" style="margin-top:8px">期待値1.2以上の目を1点100円で買ったとして確定オッズで計算。ワイドは全オッズ、2連単10〜100倍、2連複30倍未満、3連複10〜100倍に限定。</p>
+    <h3 style="margin-top:18px">賭式別のペーパートレード（日別・買える時点）</h3>
+    <div class="tw"><table><thead><tr><th>日付</th><th>単勝</th><th>ワイド</th><th>2連単</th><th>2連複</th><th>3連複</th><th>合計</th></tr></thead><tbody id="pooldays"></tbody></table></div>
+    <p class="foot" style="margin-top:8px">各マスは「点数・的中・回収率」。期待値1.2以上の目を1点100円で買ったとして確定オッズで計算。ワイドは全オッズ、2連単10〜100倍、2連複30倍未満、3連複10〜100倍に限定。</p>
   </section>
   <p class="foot">データは見張り係が約30分ごとに更新します（GitHubの都合で前後します）。このページは1分ごとに読み直します。<br>
   仕組みの中身: <a href="https://github.com/exnull0511-create/auotrace/actions">GitHub Actions</a> ・ 異常の通知: <a href="https://github.com/exnull0511-create/auotrace/issues">Issues</a></p>
@@ -189,12 +191,17 @@ function render(d){
   document.getElementById("board").innerHTML = tiles.join("");
   document.getElementById("office").innerHTML = (d.agents||[]).map(desk).join("");
   const picks = td.picks||[];
-  document.getElementById("picks").innerHTML = picks.length ? picks.map(p=>`<tr><td>${esc(p.close)}</td><td>${esc(p.race)}</td><td><span class="chip A">${esc(p.car)}</span></td><td>${p.odds}倍</td><td>${pct(p.p)}</td><td><b>${p.ev}</b></td></tr>`).join("")
-    : `<tr><td colspan="6" style="color:var(--muted)">まだありません。締切3分前から判定します。</td></tr>`;
-  const days = (d.coverage_days||[]);
+  document.getElementById("picks").innerHTML = picks.length ? picks.map(p=>`<tr><td>${esc(p.close)}</td><td>${esc(p.race)}</td><td>${esc(p.pool||"単勝")}</td><td><span class="chip A">${esc(p.key||p.car)}</span></td><td>${p.odds}倍</td><td>${pct(p.p)}</td><td><b>${p.ev}</b></td></tr>`).join("")
+    : `<tr><td colspan="7" style="color:var(--muted)">まだありません。締切3分前から判定します。</td></tr>`;
   const pp = d.paper_pools || {}; const PL = ["単勝","ワイド","2連単","2連複","3連複"];
   const cell = v => v && v.bets ? `${v.bets}点・的中${v.hits}・<b>${v.roi}%</b>` : "-";
-  document.getElementById("pools").innerHTML = PL.map(p=>`<tr><td>${p}</td><td>${cell((pp.first||{})[p])}</td><td>${cell((pp.last||{})[p])}</td></tr>`).join("");
+  const sum = o => { const t={bets:0,hits:0,ret:0}; Object.values(o||{}).forEach(v=>{t.bets+=v.bets;t.hits+=v.hits;t.ret+=v.ret}); t.roi=t.bets?Math.round(t.ret/t.bets*1000)/10:null; return t; };
+  const mini = v => v && v.bets ? `${v.bets}点・${v.hits}・<b>${v.roi}%</b>` : "-";
+  const pd = d.paper_days_pools || [];
+  document.getElementById("pooldays").innerHTML = pd.length ? pd.map(x=>`<tr><td>${esc(x.date.slice(5))}</td>${PL.map(p=>`<td>${mini(x.pools[p])}</td>`).join("")}<td>${mini(sum(x.pools))}</td></tr>`).join("")
+    : `<tr><td colspan="7" style="color:var(--muted)">翌朝の結果保存のあとに表示されます。</td></tr>`;
+  document.getElementById("pools").innerHTML = PL.map(p=>`<tr><td>${p}</td><td>${cell((pp.first||{})[p])}</td><td>${cell((pp.last||{})[p])}</td></tr>`).join("")
+    + `<tr><td><b>合計</b></td><td>${cell(sum(pp.first))}</td><td>${cell(sum(pp.last))}</td></tr>`;
   document.getElementById("days").innerHTML = days.length ? days.map(c=>`<tr><td>${c.date}</td><td>${c.races}</td><td>${c.near}（${pct(c.races?c.near/c.races:null)}）</td><td>${c.judged}</td><td>${c.bets}点</td><td>${c.hits}</td><td>${c.roi==null?"-":c.roi+"%"}</td></tr>`).join("")
     : `<tr><td colspan="7" style="color:var(--muted)">1日通しての記録は11/20から。翌朝の結果保存のあとに表示されます。</td></tr>`;
 }

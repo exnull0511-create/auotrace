@@ -149,6 +149,7 @@ def paper_summary(data):
     tot = {"bets": 0, "hits": 0, "ret": 0.0}
     days = []
     by = {t: {p: {"bets": 0, "hits": 0, "ret": 0.0} for p in POOLS} for t in ("first", "last")}
+    days_pool = []   # 日別 × 賭式（買える時点＝最初の判定）
     for pf in sorted(glob.glob(str(data / "paper" / "*.jsonl"))):
         d = Path(pf).stem
         rf = data / "races" / d[:4] / f"{d}.jsonl.gz"
@@ -172,6 +173,7 @@ def paper_summary(data):
                 if pay:
                     day["hits"] += 1
                     day["ret"] += pay
+        dp = {p: {"bets": 0, "hits": 0, "ret": 0.0} for p in POOLS}
         for t, sel in (("first", first), ("last", last)):
             for rid, x in sel.items():
                 h = res.get(rid)
@@ -184,19 +186,22 @@ def paper_summary(data):
                     pass
                 for pl, keys in picks.items():
                     for k in keys:
-                        st = by[t][pl]
-                        st["bets"] += 1
                         pay = h[pl].get(k) or 0
-                        if pay:
-                            st["hits"] += 1
-                            st["ret"] += pay
+                        for st in ((by[t][pl], dp[pl]) if t == "first" else (by[t][pl],)):
+                            st["bets"] += 1
+                            if pay:
+                                st["hits"] += 1
+                                st["ret"] += pay
         days.append(day)
+        days_pool.append({"date": d, "pools": dp})
         for k in tot:
             tot[k] += day[k]
     roi = lambda t: round(t["ret"] / t["bets"] * 100, 1) if t["bets"] else None  # noqa: E731
     return {"rule": f"期待値{RULE}以上の単勝（締切3分前〜締切の最後の判定）", "total": {**tot, "roi": roi(tot)},
             "days": [{**x, "roi": roi(x)} for x in days],
             "by_pool": {t: {p: {**v, "roi": roi(v)} for p, v in pools.items()} for t, pools in by.items()},
+            "days_by_pool": [{"date": x["date"], "pools": {p: {**v, "roi": roi(v)} for p, v in x["pools"].items()}}
+                             for x in days_pool][::-1],
             "by_pool_note": "ワイド・2連単(10〜100倍)・2連複(30倍未満)・3連複(10〜100倍)は11/24夜から記録。first=締切3分前ごろ（買える時点）/ last=締切直前"}
 
 
@@ -350,14 +355,22 @@ def dashboard(data, now, W, ws, status, paper, today_meets):
     watch_rate = tot["near"] / tot["races"] if tot["races"] else None
     judge_rate = tot["judged"] / tot["near"] if tot["near"] else None
 
-    # 今日の推奨（各レースで締切に一番近い判定）
-    last = {}
+    # 今日の推奨: 各レースの最初の判定（締切3分前ごろ＝実際に買える時点）の全賭式
+    first = {}
     for x in read_jsonl(data / "paper" / f"{today}.jsonl"):
-        if x["race_id"] not in last or x["m_left"] <= last[x["race_id"]]["m_left"]:
-            last[x["race_id"]] = x
-    picks = [{"race": x["race"], "close": x["close"], "car": p["car"], "odds": p["odds"], "p": p["p"], "ev": p["ev"]}
-             for x in last.values() for p in x["picks"]]
-    picks.sort(key=lambda p: (p["close"], p["race"], -p["ev"]))
+        if x["race_id"] not in first or x["m_left"] > first[x["race_id"]]["m_left"]:
+            first[x["race_id"]] = x
+    picks = []
+    for x in first.values():
+        for p in x["picks"]:
+            picks.append({"race": x["race"], "close": x["close"], "pool": "単勝", "key": p["car"], "car": p["car"],
+                          "odds": p["odds"], "p": p["p"], "ev": p["ev"]})
+        for pl, v in (x.get("pool_picks") or {}).items():
+            for p in v:
+                picks.append({"race": x["race"], "close": x["close"], "pool": pl, "key": p["key"], "odds": p["odds"],
+                              "p": p["p"], "ev": p["ev"]})
+    order = {p: i for i, p in enumerate(POOLS)}
+    picks.sort(key=lambda p: (p["close"], p["race"], order.get(p["pool"], 9), -p["ev"]))
 
     # データの量
     n_races, years = 0, {}
@@ -413,6 +426,9 @@ def dashboard(data, now, W, ws, status, paper, today_meets):
         w_doing, w_mode = "本日の監視は終了。明日9:55に出勤", "off"
 
     t = paper["total"]
+    fp = (paper.get("by_pool") or {}).get("first") or {}
+    ft = {k: sum(v[k] for v in fp.values()) for k in ("bets", "hits", "ret")}
+    ft["roi"] = round(ft["ret"] / ft["bets"] * 100, 1) if ft["bets"] else None
     j_doing = (f"今日の推奨 {len(picks)}点" if picks else
                ("締切3分前から判定しています（今日はまだ推奨なし）" if w_mode in ("busy", "wait") else "待機中"))
     j_mode = w_mode if w_mode in ("busy", "wait", "off", "down") else "wait"
@@ -459,12 +475,13 @@ def dashboard(data, now, W, ws, status, paper, today_meets):
         "progress": [
             {"label": "レースのデータベース", "value": n_races, "unit": "レース", "note": "2018年から。毎晩追加"},
             {"label": "締切前オッズの記録", "value": len(ts_days), "unit": "日", "goal": 21, "note": f"{ts_races:,}レース分。21日分たまったら（{VERIFY_DATE}）勝ち筋を検証"},
-            {"label": "直前判定のペーパートレード", "value": t["bets"], "unit": "点", "goal": 1000,
-             "note": f"的中{t['hits']}・回収率{t['roi'] if t['roi'] is not None else '-'}%。1,000点で本番を判断"},
+            {"label": "ペーパートレード（全賭式・買える時点）", "value": ft["bets"], "unit": "点", "goal": 1000,
+             "note": f"的中{ft['hits']}・回収率{ft['roi'] if ft['roi'] is not None else '-'}%（締切3分前ごろの判定）。1,000点で本番を判断"},
         ],
         "backtest": {"label": "過去の確定オッズでの成績（2018〜）", "note": "約5万レース・28,250点・的中率13.3%・回収率167%（確定オッズで計算した参考値）"},
         "coverage_days": cov_days,
         "paper_pools": paper.get("by_pool"),
+        "paper_days_pools": (paper.get("days_by_pool") or [])[:10],
     }
 
 
