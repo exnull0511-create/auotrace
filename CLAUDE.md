@@ -57,6 +57,7 @@
 | `ai/model.py` | 市場＋14項目の条件付きロジット（学習/検証分割） |
 | `ai/pool_gap.py` | 単勝と3連単のオッズの食い違い（確定オッズ） |
 | `ai/odds_timing.py` | 同じ食い違いが締切◯分前のオッズでも残るか |
+| `ai/indices.py` | 新しい指数の検証: ①3連単の確率の補正（q^β）③抜く力の指数（周回順位から）。学習/検証分割 |
 | `ai/pool_gap2.py` | 3連単と他の賭式（ワイド・2連単・2連複・3連複・単勝）の食い違い（学習/検証分割） |
 | `docs/index.html` | ダッシュボード（GitHub Pages）。`data` ブランチの `health/dashboard.json` を読む |
 
