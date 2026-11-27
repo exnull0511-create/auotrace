@@ -205,6 +205,97 @@ def paper_summary(data):
             "by_pool_note": "ワイド・2連単(10〜100倍)・2連複(30倍未満)・3連複(10〜100倍)は11/24夜から記録。first=締切3分前ごろ（買える時点）/ last=締切直前"}
 
 
+# ---------------- オッズ変動グラフ用のデータ ----------------
+
+CHART_POOLS = ["単勝", "2連単", "2連複", "ワイド", "3連単"]
+CHART_TOP = 8      # 組み合わせの多い賭式は、確定時の人気上位8点＋推奨した目だけ
+
+
+def _o(v):
+    return v[0] if isinstance(v, list) else v
+
+
+def build_charts(data, now, days_back=7):
+    """odds_ts（1レース約120KB）から、ダッシュボードのグラフ用の軽いデータ（数KB）を作る。
+    health/charts/index.json と health/charts/YYYY-MM-DD/<場key>_<R>.json。
+    結果が確定したレースは一度作ったら作り直さない。"""
+    root = data / "health" / "charts"
+    days = sorted({Path(p).name for p in glob.glob(str(data / "odds_ts" / "*" / "*"))}, reverse=True)[:days_back]
+    index = []
+    for d in days:
+        rf = data / "races" / d[:4] / f"{d}.jsonl.gz"
+        races = {r["race_id"].split("_", 1)[1]: r for r in read_gz(rf)} if rf.exists() else {}
+        first = {}
+        for x in read_jsonl(data / "paper" / f"{d}.jsonl"):
+            if x["race_id"] not in first or x["m_left"] > first[x["race_id"]]["m_left"]:
+                first[x["race_id"]] = x
+        items = []
+        for f in sorted(glob.glob(str(data / "odds_ts" / d[:4] / d / "*.jsonl"))):
+            key = Path(f).stem
+            place, rn = key.rsplit("_", 1)
+            name = f"{PLACES.get(place, place)}{int(rn)}R"
+            out = root / d / f"{key}.json"
+            r = races.get(key)
+            done = bool(r and r.get("finished"))
+            if out.exists():
+                try:
+                    old = json.load(open(out))
+                    if old.get("final") or (not done and d != now.date().isoformat()):
+                        items.append({"key": key, "race": name, "close": old.get("close"), "final": old.get("final", False)})
+                        continue
+                except Exception:
+                    pass
+            snaps = [x for x in read_jsonl(f) if x.get("odds")]
+            pre = [x for x in snaps if x["m_left"] >= 0]
+            if not pre:
+                continue
+            post = [x for x in snaps if x["m_left"] < 0]
+            fin_odds = (r["odds"] if done else (post[-1]["odds"] if post else {})) or {}
+            fin_sales = ((r.get("odds_meta") or {}).get("sales") if done else (post[-1].get("sales") if post else {})) or {}
+            pk = first.get(f"{d}_{key}")
+            picks = []
+            if pk:
+                picks += [{"pool": "単勝", "key": p["car"], "ev": p["ev"]} for p in pk.get("picks") or []]
+                for pl, v in (pk.get("pool_picks") or {}).items():
+                    picks += [{"pool": pl, "key": p["key"], "ev": p["ev"]} for p in v]
+            pools = {}
+            for pl in CHART_POOLS:
+                last = fin_odds.get(pl) or pre[-1]["odds"].get(pl) or {}
+                keys = sorted(last, key=lambda k: _o(last[k]) or 1e9)
+                if pl != "単勝":
+                    keys = keys[:CHART_TOP] + [p["key"] for p in picks if p["pool"] == pl and p["key"] not in keys[:CHART_TOP]][:4]
+                else:
+                    keys = sorted(last, key=int)
+                ser = {}
+                for k in keys:
+                    ser[k] = {"v": [_o((x["odds"].get(pl) or {}).get(k)) for x in pre], "final": _o(fin_odds.get(pl, {}).get(k))}
+                pools[pl] = ser
+            trial_at = next((x["m_left"] for x in pre if any(v for v in (x.get("trial") or {}).values())), None)
+            res = None
+            if done:
+                o = sorted([x for x in r["result"] if x.get("order")], key=lambda x: x["order"])
+                res = [str(x["car"]) for x in o[:3]]
+            chart = {"date": d, "key": key, "race": name, "close": pre[0].get("close"), "final": done,
+                     "t": [x["m_left"] for x in pre],
+                     "sales": {pl: {"v": [int((x.get("sales") or {}).get(pl) or 0) for x in pre], "final": int(fin_sales.get(pl) or 0)}
+                               for pl in ("単勝", "3連単")},
+                     "trial_at": trial_at, "picks": picks, "result": res, "pools": pools}
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(chart, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+            items.append({"key": key, "race": name, "close": chart["close"], "final": done})
+        items.sort(key=lambda x: (x["close"] or "", x["race"]))
+        index.append({"date": d, "races": items})
+    root.mkdir(parents=True, exist_ok=True)
+    (root / "index.json").write_text(json.dumps({"updated_at": now.isoformat(timespec="minutes"), "days": index},
+                                                ensure_ascii=False), encoding="utf-8")
+    # 古い日のグラフ用データは消す（7日分だけ残す）
+    keep = set(days)
+    for p in glob.glob(str(root / "20*")):
+        if Path(p).name not in keep:
+            import shutil
+            shutil.rmtree(p, ignore_errors=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", type=Path, required=True)
@@ -307,6 +398,10 @@ def main():
         (a.data / "paper" / "summary.json").write_text(json.dumps(paper, ensure_ascii=False, indent=1), encoding="utf-8")
         dash = dashboard(a.data, now, W, ws, status, paper, today_meets)
         (out / "dashboard.json").write_text(json.dumps(dash, ensure_ascii=False), encoding="utf-8")
+    except Exception:
+        traceback.print_exc()
+    try:
+        build_charts(a.data, now)
     except Exception:
         traceback.print_exc()
 

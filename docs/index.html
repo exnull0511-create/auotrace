@@ -97,6 +97,43 @@ button{font:inherit;color:var(--ink);background:#2c3348;border:1px solid #3a4258
 button:focus-visible,a:focus-visible{outline:2px solid var(--lamp);outline-offset:2px}
 .err{color:var(--warn);font-size:13px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---- オッズの動き（オッズ監視係をタップ） ---- */
+.desk.tap{cursor:pointer;transition:transform .12s,border-color .12s}
+.desk.tap:hover{border-color:var(--screen)} .desk.tap:active{transform:scale(.99)}
+.taphint{margin-top:8px;font-size:12px;color:var(--screen)}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(8,10,16,.72);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:12px}
+.modal[hidden]{display:none}
+.sheet{background:#161b28;border:1px solid #30384f;border-radius:16px;width:min(980px,100%);padding:14px 14px 18px;margin:auto 0}
+.sheet header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+.sheet h3{font-family:var(--display);font-weight:400;font-size:19px;margin:0}
+.xbtn{background:#2a3044;border:0;color:var(--ink);border-radius:10px;width:40px;height:40px;font-size:20px;cursor:pointer}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.ctl select{background:#20263a;color:var(--ink);border:1px solid #30384f;border-radius:10px;padding:8px 10px;font:inherit;font-size:14px;min-height:40px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{background:#20263a;color:var(--muted);border:1px solid #30384f;border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer;min-height:36px}
+.tabs button[aria-pressed=true]{background:#10324a;color:var(--screen);border-color:var(--screen)}
+.racehead{font-size:13px;color:var(--muted);margin:2px 0 8px;line-height:1.6}
+.racehead b{color:var(--ink);font-weight:600}
+.chartbox{position:relative;background:#1b2132;border-radius:12px;padding:8px 6px 4px}
+.chartbox svg{display:block;width:100%;touch-action:pan-y}
+.ax text{fill:var(--muted);font-size:11px;font-family:var(--body)}
+.ax line{stroke:#2c3448;stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:#0f1320;border:1px solid #30384f;border-radius:10px;padding:8px 10px;font-size:12px;line-height:1.5;min-width:120px;display:none;z-index:2}
+.tip .r{display:flex;align-items:center;gap:6px;justify-content:space-between}
+.tip i,.lg i{display:inline-block;width:10px;height:10px;border-radius:3px;flex:none}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.lg{display:flex;align-items:center;gap:6px;background:#20263a;border:1px solid #30384f;border-radius:999px;padding:5px 10px;font-size:13px;color:var(--ink);cursor:pointer;min-height:34px}
+.lg.offs{opacity:.35}
+.lg small{color:var(--muted)}
+.badge{font-size:11px;padding:1px 6px;border-radius:6px;background:#3a2f12;color:var(--lamp)}
+.badge.win{background:#173a26;color:var(--good)}
+.subchart{margin-top:14px}
+.subchart h4{font-weight:500;font-size:14px;margin:0 0 6px}
+.oddsnote{font-size:12px;color:var(--muted);line-height:1.7;margin-top:10px}
+.tbl{margin-top:12px;display:none}
+.tbl.show{display:block}
+.linkbtn{background:none;border:0;color:var(--screen);font:inherit;font-size:13px;cursor:pointer;padding:6px 0;min-height:36px}
 </style>
 </head>
 <body>
@@ -125,6 +162,23 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lamp);outline-offse
   <p class="foot">データは見張り係が約30分ごとに更新します（GitHubの都合で前後します）。このページは1分ごとに読み直します。<br>
   仕組みの中身: <a href="https://github.com/exnull0511-create/auotrace/actions">GitHub Actions</a> ・ 異常の通知: <a href="https://github.com/exnull0511-create/auotrace/issues">Issues</a></p>
 </div>
+
+<div class="modal" id="oddsModal" hidden role="dialog" aria-modal="true" aria-labelledby="oddsTitle">
+  <div class="sheet">
+    <header><h3 id="oddsTitle">オッズの動き</h3><button class="xbtn" id="oddsClose" aria-label="閉じる">×</button></header>
+    <div class="ctl"><select id="oddsDay" aria-label="日付"></select><select id="oddsRace" aria-label="レース"></select></div>
+    <div class="tabs" id="oddsTabs"></div>
+    <div class="racehead" id="oddsHead"></div>
+    <div class="chartbox" id="oddsBox"><svg id="oddsSvg" role="img" aria-label="締切までのオッズの動き"></svg><div class="tip" id="oddsTip"></div></div>
+    <div class="legend" id="oddsLegend"></div>
+    <div class="subchart"><h4>票の入り具合（確定時の票数に対する割合）</h4>
+      <div class="chartbox" id="salesBox"><svg id="salesSvg" role="img" aria-label="票の入り具合"></svg><div class="tip" id="salesTip"></div></div>
+      <div class="legend" id="salesLegend"></div></div>
+    <button class="linkbtn" id="oddsTblBtn">表で見る</button>
+    <div class="tw tbl" id="oddsTbl"></div>
+    <p class="oddsnote">縦軸はオッズ（倍率の差が見やすいように目盛りを対数にしています）。横軸は締切までの残り時間（直前ほど広げて表示）で、右端の「確定」が払戻に使われるオッズです。点線の縦線は試走タイムの発表。★はペーパートレードで推奨した目（締切3分前ごろの判定）。グラフを指でなぞると、その時点の値が出ます。凡例をタップすると線を消せます。組み合わせの多い賭式は、確定時の人気上位8点と推奨した目だけを表示。グラフ用データは見張り係が約30分ごとに更新します。</p>
+  </div>
+</div>
 <script>
 const SRC = "https://raw.githubusercontent.com/exnull0511-create/auotrace/data/health/dashboard.json";
 const LOOK = {
@@ -148,7 +202,8 @@ function desk(a){
   const idle = a.mode==="wait" && !/中$|中（/.test(a.doing) ? " idle" : "";
   const stats = Object.entries(a.stats||{}).map(([k,v])=>`<span>${esc(k)} <b>${esc(statText(v))}</b></span>`).join("");
   const rate = a.rate==null ? "" : `<div class="meter"><span>${esc(a.rate_label)}</span><div class="bar"><i style="width:${Math.round(a.rate*100)}%"></i></div><b>${pct(a.rate)}</b></div>`;
-  return `<article class="desk ${a.mode}${a.mode==="alert"?" alert-on":""}${idle}" aria-label="${esc(a.name)}">
+  const tap = a.id==="watch";
+  return `<article class="desk ${a.mode}${a.mode==="alert"?" alert-on":""}${idle}${tap?" tap":""}" aria-label="${esc(a.name)}"${tap?' data-open="odds" role="button" tabindex="0"':""}>
     <div class="scene ${a.mode}${idle}" style="--hair:${L.hair};--shirt:${L.shirt}">
       <div class="lampglow"></div><div class="chair"></div>
       <div class="person"><div class="body"></div><div class="arm"></div><div class="head"></div><div class="hair"></div></div>
@@ -161,6 +216,7 @@ function desk(a){
     <div class="role">${esc(a.role)}</div>
     <div class="doing">${esc(a.doing)}</div>
     ${rate}<div class="stats">${stats}</div>
+    ${tap?'<div class="taphint">タップでレースごとのオッズの動きを見る ›</div>':""}
   </article>`;
 }
 async function load(){
@@ -206,6 +262,123 @@ function render(d){
     : `<tr><td colspan="7" style="color:var(--muted)">1日通しての記録は11/20から。翌朝の結果保存のあとに表示されます。</td></tr>`;
 }
 document.getElementById("reload").addEventListener("click", load);
+
+/* ===== オッズの動き ===== */
+const CHART = "https://raw.githubusercontent.com/exnull0511-create/auotrace/data/health/charts/";
+const SER = ["#338ced","#e76624","#00a888","#d28e05","#e24d8b","#0aac23","#9887ef","#eb6263"];   // 検証済みの8色（暗い背景用）
+const OX = {pools:["単勝","2連単","2連複","ワイド","3連単"], pool:"単勝", idx:null, race:null, hidden:new Set()};
+const $ = id => document.getElementById(id);
+async function getJSON(u){ const r = await fetch(u+"?t="+Date.now(),{cache:"no-store"}); if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); }
+async function openOdds(){
+  $("oddsModal").hidden = false; document.body.style.overflow="hidden";
+  try{
+    OX.idx = await getJSON(CHART+"index.json");
+    const days = OX.idx.days||[];
+    $("oddsDay").innerHTML = days.map(d=>`<option value="${d.date}">${d.date.slice(5).replace("-","/")}（${d.races.length}R）</option>`).join("");
+    fillRaces(true);
+  }catch(e){ $("oddsHead").innerHTML = `<span class="err">グラフ用データを読めませんでした（${esc(e.message)}）</span>`; }
+}
+function closeOdds(){ $("oddsModal").hidden = true; document.body.style.overflow=""; }
+function fillRaces(pickNow){
+  const day = (OX.idx.days||[]).find(d=>d.date===$("oddsDay").value) || {races:[]};
+  $("oddsRace").innerHTML = day.races.map(r=>`<option value="${r.key}">${esc(r.close||"")} ${esc(r.race)}${r.final?"":"（確定前）"}</option>`).join("");
+  if(pickNow && day.races.length){   // 今に一番近い締切のレース
+    const now = new Date(Date.now()+9*3600e3).toISOString().slice(11,16);
+    const past = day.races.filter(r=>(r.close||"")<=now);
+    $("oddsRace").value = (past.length?past[past.length-1]:day.races[0]).key;
+  }
+  loadRace();
+}
+async function loadRace(){
+  const d=$("oddsDay").value, k=$("oddsRace").value; if(!d||!k) return;
+  $("oddsHead").textContent = "読み込み中…";
+  try{ OX.race = await getJSON(`${CHART}${d}/${k}.json`); OX.hidden = new Set(); drawRace(); }
+  catch(e){ $("oddsHead").innerHTML = `<span class="err">読めませんでした（${esc(e.message)}）</span>`; }
+}
+function tabs(){
+  $("oddsTabs").innerHTML = OX.pools.map(p=>`<button aria-pressed="${p===OX.pool}" data-pool="${p}">${p}</button>`).join("");
+}
+const fmtO = v => v==null ? "-" : (v>=100? Math.round(v) : v.toFixed(1))+"倍";
+function seriesOf(R){
+  const pool = R.pools[OX.pool]||{}, keys = Object.keys(pool);
+  const picked = new Set(R.picks.filter(p=>p.pool===OX.pool).map(p=>p.key));
+  const res = R.result||[], srt = a=>a.slice().sort((x,y)=>x-y).join("-");
+  const winKey = {"単勝":res[0], "2連単":res.slice(0,2).join("-"), "2連複":srt(res.slice(0,2)), "3連単":res.slice(0,3).join("-")}[OX.pool];
+  const wideWins = OX.pool==="ワイド" && res.length>=3 ? new Set([srt([res[0],res[1]]),srt([res[0],res[2]]),srt([res[1],res[2]])]) : new Set();
+  return keys.map((k,i)=>({ key:k, ...pool[k],
+    color: OX.pool==="単勝" ? SER[(parseInt(k)-1)%8] : (i<8 ? SER[i] : "#8b93a8"),
+    dash: OX.pool!=="単勝" && i>=8,
+    pick: picked.has(k), win: k===winKey || wideWins.has(k) }));
+}
+function drawRace(){
+  const R = OX.race; tabs();
+  const pk = R.picks.filter(p=>p.pool===OX.pool);
+  $("oddsHead").innerHTML = `<b>${esc(R.race)}</b>　締切 ${esc(R.close||"-")}　${R.final?`結果 <b>${(R.result||[]).join("-")}</b>`:"結果はまだ"}`+
+    (pk.length?`　★推奨 ${pk.map(p=>`${esc(p.key)}（期待値${(+p.ev).toFixed(2)}）`).join("、")}`:"");
+  const S = seriesOf(R);
+  drawLines($("oddsSvg"), $("oddsTip"), R.t, S.filter(s=>!OX.hidden.has(s.key)), {log:true, trial:R.trial_at, fmt:fmtO, height:260});
+  $("oddsLegend").innerHTML = S.map(s=>`<button class="lg${OX.hidden.has(s.key)?" offs":""}" data-key="${esc(s.key)}"><i style="background:${s.color}"></i>${esc(s.key)}${OX.pool==="単勝"?"番":""}<small>${fmtO(s.final)}</small>${s.pick?'<span class="badge">★推奨</span>':""}${s.win?'<span class="badge win">的中</span>':""}</button>`).join("");
+  const sales = ["単勝","3連単"].map((p,i)=>{ const x=R.sales[p]; const f=x.final||Math.max(...x.v,1); return {key:p, color:SER[i], v:x.v.map(v=>v?Math.min(100,v/f*100):null), final:100}; });
+  drawLines($("salesSvg"), $("salesTip"), R.t, sales, {log:false, max:100, fmt:v=>v==null?"-":Math.round(v)+"%", height:150, trial:R.trial_at});
+  $("salesLegend").innerHTML = sales.map(s=>`<span class="lg"><i style="background:${s.color}"></i>${s.key}<small>確定 ${R.sales[s.key].final.toLocaleString()}票</small></span>`).join("");
+  // 表
+  const cols = [[60,"60分前"],[10,"10分前"],[3,"3分前"],[1,"1分前"]];
+  const at = (s,m) => { let bi=-1,bd=1e9; R.t.forEach((t,i)=>{ if(s.v[i]!=null && Math.abs(t-m)<bd){bd=Math.abs(t-m);bi=i;} }); return bi<0?null:s.v[bi]; };
+  $("oddsTbl").innerHTML = `<table><thead><tr><th>${OX.pool}</th>${cols.map(c=>`<th>${c[1]}</th>`).join("")}<th>確定</th></tr></thead><tbody>${
+    S.map(s=>`<tr><td>${esc(s.key)}${s.pick?" ★":""}${s.win?" ◎":""}</td>${cols.map(c=>`<td>${fmtO(at(s,c[0]))}</td>`).join("")}<td><b>${fmtO(s.final)}</b></td></tr>`).join("")}</tbody></table>`;
+}
+function drawLines(svg, tip, T, S, o){
+  const W = Math.max(300, svg.parentElement.clientWidth-12), H = o.height, m = {l:46, r:52, t:12, b:26};
+  svg.setAttribute("viewBox",`0 0 ${W} ${H}`); svg.setAttribute("height",H);
+  const tmax = Math.max(...T, 10), xFinal = W-m.r+30;
+  // 締切直前ほど横に広げる（平方根の目盛り）。動きの大半は最後の10分に集まるため
+  const X = t => m.l + (Math.sqrt(tmax) - Math.sqrt(Math.max(0,t))) / Math.sqrt(tmax) * (W-m.l-m.r);
+  const vals = S.flatMap(s=>[...s.v, s.final]).filter(v=>v!=null && v>0);
+  let lo = o.log ? Math.max(1, Math.min(...vals, 1.5)) : 0, hi = o.max || Math.max(...vals, 2);
+  if(o.log){ hi = Math.min(Math.max(hi, lo*2), 2000); }
+  const Y = v => { if(v==null) return null; if(o.log){ v=Math.min(Math.max(v,lo),hi); return m.t+(1-(Math.log(v)-Math.log(lo))/(Math.log(hi)-Math.log(lo)))*(H-m.t-m.b); } return m.t+(1-v/hi)*(H-m.t-m.b); };
+  const ticks = o.log ? [1,1.5,2,3,5,10,20,50,100,200,500,1000].filter(v=>v>=lo&&v<=hi) : [0,25,50,75,100];
+  const xt = [60,30,10,5,3,1,0].filter(t=>t<=tmax);
+  let g = `<g class="ax">${ticks.map(v=>`<line x1="${m.l}" x2="${W-m.r+36}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l-6}" y="${Y(v)+4}" text-anchor="end">${o.log?v:v+"%"}</text>`).join("")}
+    ${xt.map(t=>`<text x="${X(t)}" y="${H-8}" text-anchor="middle">${t===0?"締切":t+"分"}</text>`).join("")}<text x="${xFinal}" y="${H-8}" text-anchor="middle">確定</text></g>`;
+  if(o.trial!=null) g += `<line x1="${X(o.trial)}" x2="${X(o.trial)}" y1="${m.t}" y2="${H-m.b}" stroke="#ffd27a" stroke-width="1.5" stroke-dasharray="4 4" opacity=".7"/><text x="${X(o.trial)+4}" y="${m.t+10}" fill="#ffd27a" font-size="11">試走発表</text>`;
+  g += `<line x1="${X(0)}" x2="${X(0)}" y1="${m.t}" y2="${H-m.b}" stroke="#59607a" stroke-width="1"/>`;
+  S.forEach(s=>{
+    let d="", pen=false;
+    s.v.forEach((v,i)=>{ const y=Y(v); if(y==null){pen=false;return;} d += (pen?"L":"M")+X(T[i]).toFixed(1)+" "+y.toFixed(1); pen=true; });
+    const lastI = s.v.map((v,i)=>v!=null?i:-1).filter(i=>i>=0).pop();
+    g += `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="${s.pick||s.win?2.6:2}" stroke-linejoin="round" ${s.dash?'stroke-dasharray="5 4"':""}/>`;
+    if(s.final!=null && lastI!=null) g += `<path d="M${X(T[lastI])} ${Y(s.v[lastI])}L${xFinal} ${Y(s.final)}" stroke="${s.color}" stroke-width="1.5" stroke-dasharray="2 4" fill="none"/><circle cx="${xFinal}" cy="${Y(s.final)}" r="4.5" fill="${s.color}" stroke="#1b2132" stroke-width="2"/>`;
+    if(s.pick && lastI!=null) g += `<text x="${X(T[lastI])+5}" y="${Y(s.v[lastI])-6}" fill="#ffd27a" font-size="13">★</text>`;
+  });
+  g += `<line id="${svg.id}X" y1="${m.t}" y2="${H-m.b}" stroke="#eef0f5" stroke-width="1" opacity="0"/>`;
+  svg.innerHTML = g;
+  const cross = svg.querySelector(`#${svg.id}X`);
+  const move = ev => {
+    const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
+    let i; if(px > (X(0)+xFinal)/2) i = -1; else { let bd=1e9; T.forEach((t,j)=>{ const dd=Math.abs(X(t)-px); if(dd<bd){bd=dd;i=j;} }); }
+    const xx = i===-1 ? xFinal : X(T[i]);
+    cross.setAttribute("x1",xx); cross.setAttribute("x2",xx); cross.setAttribute("opacity",".5");
+    const rows = S.map(s=>({s, v: i===-1 ? s.final : s.v[i]})).filter(x=>x.v!=null).sort((a,b)=>a.v-b.v).slice(0,10);
+    tip.innerHTML = `<div><b>${i===-1?"確定":`締切${T[i]<1?"直前":Math.round(T[i])+"分前"}`}</b></div>`+rows.map(x=>`<div class="r"><span><i style="background:${x.s.color}"></i> ${esc(x.s.key)}${x.s.pick?" ★":""}</span><b>${o.fmt(x.v)}</b></div>`).join("");
+    tip.style.display="block";
+    const bx = svg.parentElement.getBoundingClientRect(), tx = ev.clientX - bx.left;
+    tip.style.left = (tx > bx.width/2 ? tx - tip.offsetWidth - 12 : tx + 12) + "px"; tip.style.top = "8px";
+  };
+  svg.onpointermove = move; svg.onpointerdown = move;
+  svg.onpointerleave = () => { tip.style.display="none"; cross.setAttribute("opacity","0"); };
+}
+document.addEventListener("click", e=>{
+  if(e.target.closest('[data-open="odds"]')) return openOdds();
+  if(e.target.id==="oddsClose" || e.target.id==="oddsModal") return closeOdds();
+  const t = e.target.closest("#oddsTabs button"); if(t){ OX.pool=t.dataset.pool; OX.hidden=new Set(); return drawRace(); }
+  const l = e.target.closest("#oddsLegend .lg"); if(l){ const k=l.dataset.key; OX.hidden.has(k)?OX.hidden.delete(k):OX.hidden.add(k); return drawRace(); }
+  if(e.target.id==="oddsTblBtn"){ const t=$("oddsTbl"); t.classList.toggle("show"); e.target.textContent=t.classList.contains("show")?"表を閉じる":"表で見る"; }
+});
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") closeOdds(); if((e.key==="Enter"||e.key===" ") && e.target.matches('[data-open="odds"]')){ e.preventDefault(); openOdds(); } });
+$("oddsDay").addEventListener("change", ()=>fillRaces(false));
+$("oddsRace").addEventListener("change", loadRace);
+window.addEventListener("resize", ()=>{ if(!$("oddsModal").hidden && OX.race) drawRace(); });
 load(); setInterval(load, 60000);
 </script>
 </body>
