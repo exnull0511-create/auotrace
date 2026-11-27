@@ -87,6 +87,7 @@ odds_ts/YYYY/YYYY-MM-DD/<場key>_<R>.jsonl   締切前オッズ（1行=1回の�
 paper/YYYY-MM-DD.jsonl           直前判定（単勝: 全車の期待値・推奨・notified / pool_picks: ワイド・2連単・2連複・3連複の割安な目）
 paper/summary.json               ペーパートレード成績（by_pool: 賭式別 first=締切3分前ごろ / last=締切直前）
 health/status.json, log.jsonl, dashboard.json, watch_status.json
+health/charts/index.json, health/charts/YYYY-MM-DD/<場key>_<R>.json   オッズの動きグラフ用（直近7日・health.py が作る）
 ```
 - 並列で書き込むため、push は `git pull --rebase -X theirs` で再試行し、`done.txt`/`checked.txt` は `.gitattributes` の `merge=union` で行を合流させる。
 - レコードの形を変えたら `collector/run.py` の `SCHEMA` を上げる（全日付を取り直す）。
