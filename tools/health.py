@@ -566,7 +566,7 @@ def dashboard(data, now, W, ws, status, paper, today_meets):
         "overall_rate": sum(rates) / len(rates) if rates else None,
         "agents": agents,
         "today": {"date": today, "races": len(tids), "closed": tc["races"], "near": tc["near"], "judged": tc["judged"],
-                  "meets": [PLACES.get(k, k) for k, _ in today_meets], "picks": picks[::-1][:300]}   # 新しい（締切が遅い）レースを上に。1日2〜3場でも切れないように300点まで,
+                  "meets": [PLACES.get(k, k) for k, _ in today_meets], "picks": picks[::-1][:300]},   # 新しい（締切が遅い）レースを上に。1日2〜3場でも切れないように300点まで
         "progress": [
             {"label": "レースのデータベース", "value": n_races, "unit": "レース", "note": "2018年から。毎晩追加"},
             {"label": "締切前オッズの記録", "value": len(ts_days), "unit": "日", "goal": 21, "note": f"{ts_races:,}レース分。21日分たまったら（{VERIFY_DATE}）勝ち筋を検証"},
