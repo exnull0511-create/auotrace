@@ -1,1 +1,1 @@
-{"updated_at": "2026-11-28T20:37:23+09:00", "state": "handover", "watching": [{"race": "飯塚1R", "close": "21:26"}], "next": [{"race": "飯塚1R", "close": "21:26"}, {"race": "飯塚2R", "close": "21:52"}, {"race": "飯塚3R", "close": "22:18"}], "stat": {"ok": 188}}
+{"updated_at": "2026-11-28T20:48:00+09:00", "state": "watching", "watching": [{"race": "飯塚1R", "close": "21:26"}], "next": [{"race": "飯塚1R", "close": "21:26"}, {"race": "飯塚2R", "close": "21:52"}, {"race": "飯塚3R", "close": "22:18"}], "stat": {"ok": 1}}
